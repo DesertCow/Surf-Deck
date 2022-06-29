@@ -21,11 +21,15 @@
   
  npm init 
  
+ 
  npm install mysql2
+ 
  
  npm install sequelize 
  
+ 
  npm install dotenv
+
 
   ## [Usage](#table-of-contents)
  
@@ -40,7 +44,8 @@
   ## [Contributing](#table-of-contents)
   
   
-  We will not accept contribution from third-parties at this time. Thank you.
+  We will not accept contribution from third-parties at this time. 
+  Thank you for your interest though.
     
   ## [Tests](#table-of-contents)
   
