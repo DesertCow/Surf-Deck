@@ -1,0 +1,15 @@
+-- Board INFO Seed
+INSERT INTO Surfboard (id, Brand, BoardName, Feet, Inches)
+VALUES
+(1001, 'Nation', 'Dream Crusher', 6, 0)
+(1002, 'Dano', 'Sea Green', 9, 8)
+(1003, 'Cordell', 'CFishPoly', 6, 0)
+(1004, 'Estrada', 'TheBandito', 6, 1)
+(1005, 'J7', 'TheWhatever', 6, 0)
+(1006, 'J7', 'TheWhatever', 6, 2)
+(1007, 'Thread', 'PirateHooker', 6, 1)
+(1008, 'Thread', 'KoozieR.T', 6, 3)
+(1009, 'J7', 'UglyStick', 5, 10)
+(1010, 'Nation', 'SexMachine', 5, 9)
+(1011, 'Thread', 'ThePillow', 5, 5)
+(1012, 'Almond', 'Joy', 7, 6)
