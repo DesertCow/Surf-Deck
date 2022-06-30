@@ -19,6 +19,14 @@ Surfboard.init(
         max: 9999
       }
     },
+    brand: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    board_model: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     legnth_inch: {
       type: DataTypes.INTEGER,
       allowNull: false,
