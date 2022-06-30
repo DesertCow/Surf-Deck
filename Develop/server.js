@@ -1,9 +1,9 @@
 const express = require('express');
-const routes = require('./routes');
+const routes = require('./controllers');
 const sequelize = require('./config/connection');
-const seedAll = require('./seeds/index');
-// const { init } = require('./models/Category');
-const inquirer = require('inquirer');
+// const seedAll = require('./seeds/index');
+const { init } = require('./models/Surfboard');
+// const inquirer = require('inquirer');
 const { config } = require('dotenv');
 const exphbs = require('express-handlebars');
 
@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers'));
 
