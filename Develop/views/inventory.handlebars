@@ -1,32 +1,23 @@
-<head>
 
-
-</head>
-<body>
   
 <div id="boardData"></div>
-
-
 <h1>Add surfboard to database</h1>
-<form action="/Develop/controllers/api/surfboard_routes.js" method="post">
-<input type="text" name="board_num" placeholder="enter board number">
-<input type="text" name="brand" id="" placeholder="enter board brand name">
-<input type="text" name="board_model" placeholder="enter board model name">
-<input type="number" name="legnth_inch" placeholder="enter board length in inches">
-<input type="checkbox" id="Checked_out" name="Checked_out" value="Checked_out">
-<label for="Checked_out">The board is currently checked out</label>
-<input type="checkbox" id="damaged" name="damaged" value="damaged">
-<label for="damaged">The board is damaged</label>
-<input type="text" name="fin_setup" placeholder="enter the fin setup style of the board">
-<input type="number" name="fin_count" placeholder="enter the fin count of the board">
-<input type="number" name="location_id" id="location_id" placeholder="enter the location id of the board">
-<input type="submit" value="submit">
-
+<form class="inventory-form" >
+{{!-- <br action="/Develop/controllers/api/surfboard_routes.js" method="post"></br> --}}
+  <input type="text" id="board_num" placeholder="enter board number"></br>
+  <input type="text" id="brand" placeholder="enter board brand name"></br>
+  <input type="text" name="board_model" placeholder="enter board model name"></br>
+  <input type="number" name="legnth_inch" placeholder="enter board length in inches"></br>
+  <input type="checkbox" id="Checked_out" name="Checked_out" value="Checked_out"></br>
+  <label for="Checked_out">The board is currently checked out</label></br>
+  <input type="checkbox" id="damaged" name="damaged" value="damaged"></br>
+  <label for="damaged">The board is damaged</label></br>
+  <input type="text" name="fin_setup" placeholder="enter the fin setup style of the board"></br>
+  <input type="number" name="fin_count" placeholder="enter the fin count of the board"></br>
+  <input type="number" name="location_id" id="location_id" placeholder="enter the location id of the board"></br>
+  <input type="submit" value="submit"></br>
 </form>
 
+{{surfboard.brand}}
 
-</script>
-
-
-
-</body>
+<script src="./js/database.js"></script>
