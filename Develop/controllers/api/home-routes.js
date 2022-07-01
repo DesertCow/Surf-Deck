@@ -9,11 +9,16 @@ const Surfboard = require('../../models/surfboard')
 router.get('/', (req, res) => {
   Surfboard.findAll()
 
-    .then(surfboardData => res.json(surfboardData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  res.render('home', {
+ })
+  
+
+    // .then(surfboardData => res.json(surfboardData))
+    // .catch(err => {
+    //   console.log(err);
+    //   res.status(500).json(err);
+    // });
 })
+
 
 module.exports = router

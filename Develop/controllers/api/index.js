@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const surfboardRoutes = require('./surfboard_routes')
+const homeRoutes = require('./home-routes')
 
-router.use('/surfboards', surfboardRoutes)
+router.use('/', homeRoutes)
 
 module.exports = router;
