@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers'));
 
@@ -37,7 +37,7 @@ async function startLocalServer() {
     app.listen(PORT, () => {
       console.log(`\n\x1b[42m  ~~~ Local Server Start Success! ~~~  \x1b[0m`);
       console.log(`\x1b[45m    http://localhost:${PORT}/api/   \x1b[0m`);
-      //TODO Add print out of API commands/paths
+      
 
     });
   });
