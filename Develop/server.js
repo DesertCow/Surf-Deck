@@ -6,6 +6,7 @@ const { init } = require('./models/surfboard');
 // const inquirer = require('inquirer');
 const { config } = require('dotenv');
 const exphbs = require('express-handlebars');
+const path = require('path');
 
 
 const app = express();
@@ -18,7 +19,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers'));
 
@@ -61,7 +62,7 @@ startLocalServer();
 
 //==========================Handlebar Partials Functions ==============//
 
-app.post('/api/surfboards/', (req, res) =>{
-  
+app.post('/api/surfboards/', (req, res) => {
+
 
 })

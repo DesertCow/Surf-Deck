@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Surfboard = require('../../models/surfboard')
+const Surfboard = require('../models/surfboard')
 
 
 // the '/api/surfboards' endpoint
@@ -19,6 +19,17 @@ router.get('/', (req, res) => {
   //   res.status(500).json(err);
   // });
 })
+
+router.get('/inventory', (req, res) => {
+
+  // console.log("!!!!!!InventoryFormHandler");
+
+  res.render('inventory', {
+
+  })
+
+})
+
 
 
 module.exports = router
