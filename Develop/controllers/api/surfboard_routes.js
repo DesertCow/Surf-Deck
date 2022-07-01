@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Surfboard = require('../../models/surfboard')
+const { Surfboard, Location } = require('../../models')
 
 
 // the '/api/surfboards' endpoint
@@ -7,7 +7,12 @@ const Surfboard = require('../../models/surfboard')
 //=========================== Surfboard Data View ==========================//
 //View all information from surfboard table
 router.get('/', (req, res) => {
-  Surfboard.findAll()
+  Surfboard.findAll({
+    include: [
+      Location
+
+    ]
+  })
 
     .then(surfboardData => res.json(surfboardData))
     .catch(err => {
