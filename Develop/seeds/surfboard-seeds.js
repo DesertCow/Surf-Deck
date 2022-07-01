@@ -25,7 +25,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 1',
     fin_count: 3,
-    location: 'Long Beach'
+    location_id: 3
   },
   {
     board_num: '1002',
@@ -36,7 +36,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 2',
     fin_count: 2,
-    location: 'Long Beach'
+    location_id: 3
   },
   {
     board_num: '1003',
@@ -47,7 +47,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 3',
     fin_count: 1,
-    location: 'Newport Beach'
+    location_id: 2
   },
   {
     board_num: '1004',
@@ -58,7 +58,7 @@ const surfboardData = [
     damaged: true,
     fin_setup: 'setup 2',
     fin_count: 3,
-    location: 'Huntington Beach'
+    location_id: 1
   },
   {
     board_num: '1005',
@@ -69,7 +69,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 1',
     fin_count: 2,
-    location: 'Huntington Beach'
+    location_id: 1
   },
   {
     board_num: '1006',
@@ -80,7 +80,7 @@ const surfboardData = [
     damaged: true,
     fin_setup: 'setup 3',
     fin_count: 3,
-    location: 'Long Beach'
+    location_id: 3
   },
   {
     board_num: '1007',
@@ -91,7 +91,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 2',
     fin_count: 1,
-    location: 'Newport Beach'
+    location_id: 2
   },
   {
     board_num: '1008',
@@ -102,7 +102,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 2',
     fin_count: 2,
-    location: 'Newport Beach'
+    location_id: 2
   },
   {
     board_num: '1009',
@@ -113,7 +113,7 @@ const surfboardData = [
     damaged: true,
     fin_setup: 'setup 3',
     fin_count: 2,
-    location: 'Huntington Beach'
+    location_id: 1
   },
   {
     board_num: '1010',
@@ -124,7 +124,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 1',
     fin_count: 3,
-    location: 'Huntington Beach'
+    location_id: 1
   },
   {
     board_num: '1011',
@@ -135,7 +135,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 2',
     fin_count: 2,
-    location: 'Newport Beach'
+    location_id: 2
   },
   {
     board_num: '1012',
@@ -146,7 +146,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 1',
     fin_count: 1,
-    location: 'Long Beach'
+    location_id: 3
   },
 
 ]
