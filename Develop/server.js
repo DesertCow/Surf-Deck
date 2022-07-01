@@ -58,3 +58,10 @@ startLocalServer();
 
 
 //!========================= EOF =========================
+
+//==========================Handlebar Partials Functions ==============//
+
+app.post('/api/surfboards/', (req, res) =>{
+  
+
+})
