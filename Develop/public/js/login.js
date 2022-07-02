@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      window.alert("\n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\nWelcome Back! \n 📧 =" + email + "\n" + "🗝️ = " + password + "\n\n Login Sugcessful! \n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n" + response.ok);
+      window.alert("\n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n                 Welcome Back! \n\n 📧: " + email + "\n\n               Login Sugcessful! \n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n");
       document.location.replace('/');
     } else {
       alert('Failed to log in.');
