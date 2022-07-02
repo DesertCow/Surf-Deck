@@ -12,6 +12,7 @@ body {
 }
 
 .form-signin {
+  font-family: 'Sonsie One', cursive;
   max-width: 330px;
   padding: 15px;
 }
@@ -21,12 +22,14 @@ body {
 }
 
 .form-signin input[type="email"] {
+  font-family: 'Sonsie One', cursive;
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
+  font-family: 'Sonsie One', cursive;
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -34,7 +37,13 @@ body {
 
 .headerBG {
   background-color:#FCBF49;
+  border-radius: 20px;
+  font-family: 'Sonsie One', cursive;
   width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 form {
@@ -51,11 +60,32 @@ form {
 }
 
 .nav-link {
+  width: 100%;
   font-size: 30px;
-  background-color:#D62828;
+  background-color:#FC4A4A;
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'Sonsie One', cursive;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+
+.loginAndSignBtn {
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'Sonsie One', cursive;
+  font-size: 50px;
+}
+
+.signupCard {
+  font-family: 'Sonsie One', cursive;
+}
+ 
+.login-form {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
