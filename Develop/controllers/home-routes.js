@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 
 router.get('/inventory', (req, res) => {
 
-  // console.log("!!!!!!InventoryFormHandler");
+  console.log("/inventory");
 
   res.render('inventory', {
 
@@ -30,6 +30,45 @@ router.get('/inventory', (req, res) => {
 
 })
 
+router.get('/login', (req, res) => {
+
+  console.log("/login");
+
+  res.render('login', {
+
+  })
+
+})
+
+router.get('/signup', (req, res) => {
+
+  console.log("/signup");
+
+  res.render('signup', {
+
+  })
+
+})
+
+router.get('/about', (req, res) => {
+
+  console.log("/about");
+
+  res.render('about', {
+
+  })
+
+})
+
+router.get('/contact', (req, res) => {
+
+  console.log("/contact");
+
+  res.render('contact', {
+
+  })
+
+})
 
 
 module.exports = router
