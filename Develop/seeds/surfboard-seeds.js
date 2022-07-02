@@ -1,6 +1,6 @@
 const { Surfboard } = require('../models')
 
-// INSERT INTO Surfboard(board_num, brand, board_name, length_inches)
+// INSERT INTO Surfboard(board_num, brand, board_name, length_inch)
 // VALUES
 //   (1001, 'Nation', 'Dream Crusher', 72)
 //   (1002, 'Dano', 'Sea Green', 116)
@@ -119,7 +119,7 @@ const surfboardData = [
     board_num: '1010',
     brand: 'Nation',
     board_model: 'Sex Machine',
-    length_inches: 69,
+    length_inch: 69,
     checked_out: true,
     damaged: false,
     fin_setup: 'setup 1',
@@ -130,7 +130,7 @@ const surfboardData = [
     board_num: '1011',
     brand: 'Thread',
     board_model: 'The Pillow',
-    length_inches: 65,
+    length_inch: 65,
     checked_out: false,
     damaged: false,
     fin_setup: 'setup 2',
@@ -141,7 +141,7 @@ const surfboardData = [
     board_num: '1012',
     brand: 'Almond',
     board_model: 'Joy',
-    length_inches: 90,
+    length_inch: 90,
     checked_out: true,
     damaged: false,
     fin_setup: 'setup 1',
