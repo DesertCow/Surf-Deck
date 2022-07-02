@@ -4,18 +4,17 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector('#loginbox-Email').value.trim();
   const password = document.querySelector('#loginbox-Password').value.trim();
 
-  console.log("Email = " + email + " || " + "Password = " + password);
-  window.alert("\n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\nWelcome Back! \n 📧 =" + email + "\n" + "🗝️ = " + password + "\n\n Login Sugcessful! \n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n");
+  // console.log("Email = " + email + " || " + "Password = " + password);
 
   if (email && password) {
-    // const response = await fetch('/api/users/login', {
-    //   method: 'POST',
-    //   body: JSON.stringify({ email, password }),
-    //   headers: { 'Content-Type': 'application/json' },
-    // });
+    const response = await fetch('/api/users/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-    // if (response.ok) {
-    if (1) {
+    if (response.ok) {
+      window.alert("\n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n                 Welcome Back! \n\n 📧: " + email + "\n\n               Login Sugcessful! \n🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄 🏄\n");
       document.location.replace('/');
     } else {
       alert('Failed to log in.');
