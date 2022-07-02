@@ -1,5 +1,6 @@
 const seedSurfboard = require('./surfboard-seeds');
 const seedLocation = require('./location-seeds')
+const seedUser = require('./user-seeds')
 
 const sequelize = require('../config/connection');
 
@@ -10,6 +11,8 @@ const seedAll = async () => {
   console.log('\n----- LOCATION SEEDED -----\n');
   await seedSurfboard();
   console.log('\n----- SURFBOARD SEEDED -----\n');
+  await seedUser();
+  console.log('\n----- USER SEEDED -----\n');
 
 
 

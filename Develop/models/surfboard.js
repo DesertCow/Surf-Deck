@@ -27,7 +27,7 @@ Surfboard.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    legnth_inch: {
+    length_inch: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
