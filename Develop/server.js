@@ -2,10 +2,11 @@ const express = require('express');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 // const seedAll = require('./seeds/index');
-const { init } = require('./models/Surfboard');
+const { init } = require('./models/surfboard');
 // const inquirer = require('inquirer');
 const { config } = require('dotenv');
 const exphbs = require('express-handlebars');
+const path = require('path');
 
 
 const app = express();
@@ -18,7 +19,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers'));
 
@@ -37,7 +38,7 @@ async function startLocalServer() {
     app.listen(PORT, () => {
       console.log(`\n\x1b[42m  ~~~ Local Server Start Success! ~~~  \x1b[0m`);
       console.log(`\x1b[45m    http://localhost:${PORT}/api/   \x1b[0m`);
-      //TODO Add print out of API commands/paths
+
 
     });
   });
@@ -57,11 +58,13 @@ async function startLocalServer() {
 startLocalServer();
 
 
-//!========================= EOF =========================
+
 
 //==========================Handlebar Partials Functions ==============//
 
-app.post('/api/surfboards/', (req, res) =>{
-  
+app.post('/api/surfboards/', (req, res) => {
+
 
 })
+
+//!========================= EOF =========================
