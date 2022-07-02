@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 })
 
 //=========================== User Data Post ==========================//
-router.post('/login', (req, res) => {
+router.post('/signup', (req, res) => {
   console.info(`${req.method} request received to create user`)
   //Example request body
   // {
