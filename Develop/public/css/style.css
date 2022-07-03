@@ -23,16 +23,10 @@ body {
 
 .form-signin input[type="email"] {
   font-family: 'Sonsie One', cursive;
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
   font-family: 'Sonsie One', cursive;
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .headerBG {
@@ -75,6 +69,11 @@ form {
 .loginAndSignBtn {
   /* font-family: 'Orbitron', sans-serif; */
   font-family: 'Sonsie One', cursive;
+  font-size: 50px;
+}
+
+.logoTitle {
+  font-family: 'Monoton', cursive;
   font-size: 50px;
 }
 

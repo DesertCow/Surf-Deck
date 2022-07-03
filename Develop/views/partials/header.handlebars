@@ -1,20 +1,20 @@
-<header
-  class="container d-flex headerBG flex-wrap align-items-center justify-content-center justify-content-between py-3 mb-4 mt-0 border-bottom">
-  <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-      <use xlink:href="#bootstrap"></use>
-    </svg>
-  </a>
-
-  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="/" class="nav-link px-2 m-1 link-dark">Home</a></li>
-    <li><a href="/inventory" class="nav-link px-2 m-1 link-dark">Inventory</a></li>
-    <li><a href="/about" class="nav-link px-2 m-1 link-dark">About</a></li>
-    <li><a href="/contact" class="nav-link px-2 m-1 link-dark">Contact</a></li>
-  </ul>
-
-  <div class="col-md-3 px-2 text-end loginAndSignBtn">
-    <a href="/login"><button type="button" class="btn btn-primary me-2">Login</button></a>
-    <a href="/signup"><button type="button" class="btn btn-primary">Sign-up</button></a>
-  </div>
-</header>
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 headerBG align-items-center justify-content-center p-2">
+  <li class="m-4 p-2 logoTitle"><h3>Surf-Deck</h3></li>
+  {{!-- <li class="m-4 p-2">
+    <a href="/" class="d-flex align-items-center"><img class="mb-4 p-2" src="./img/surfboard_outline.png" alt="" width="100" height="100"></a>
+  </li> --}}
+  <li class="m-4 p-2"><a href="/" class="nav-link px-2 m-1 link-dark">Home</a></li>
+  <li class="m-4 p-2"><a href="/inventory" class="nav-link px-2 m-1 link-dark">Inventory</a></li>
+  <li class="m-4 p-2"><a href="/about" class="nav-link px-2 m-1 link-dark">About</a></li>
+  <li class="m-4 p-2"><a href="/contact" class="nav-link px-2 m-1 link-dark">Contact</a></li>
+  <li class="m-4 p-2 justify-content-center">
+    <div class="text-end loginAndSignBtn align-items-center justify-content-center">
+      <a href="/login" class="justify-content-center align-items-center"><button type="button" class="btn btn-primary me-2 justify-content-center align-items-center">Login</button></a>
+    </div>
+  </li>
+  <li class="m-4 p-2 justify-content-center">
+    <div class="text-end loginAndSignBtn align-items-center justify-content-center">
+      <a href="/signup" class="justify-content-center align-items-center"><button type="button" class="btn btn-primary">Sign-up</button></a>
+    </div>
+  </li>
+</ul>
