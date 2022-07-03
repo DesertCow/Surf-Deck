@@ -12,7 +12,7 @@ body {
 }
 
 .form-signin {
-  font-family: 'Sonsie One', cursive;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   max-width: 330px;
   padding: 15px;
 }
@@ -22,17 +22,11 @@ body {
 }
 
 .form-signin input[type="email"] {
-  font-family: 'Sonsie One', cursive;
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .form-signin input[type="password"] {
-  font-family: 'Sonsie One', cursive;
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .headerBG {
@@ -78,14 +72,24 @@ form {
   font-size: 50px;
 }
 
+.logoTitle {
+  font-family: 'Monoton', cursive;
+  font-size: 50px;
+}
+
 .signupCard {
-  font-family: 'Sonsie One', cursive;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
  
 .login-form {
+  width: 450px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.h3 {
+  font-size: 20px;
 }
