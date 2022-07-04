@@ -1,22 +1,92 @@
 
+{{!-- <div class="container">
+  <table class="table table-striped table-hover table-primary table-font">
+    <thead>
+      <tr>
+        <th scope="col">Board #</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Model</th>
+        <th scope="col">Length (in)</th>
+        <th scope="col">Checked Out</th>
+        <th scope="col">Damaged</th>
+        <th scope="col">Fin Setup</th>
+        <th scope="col">Fin #</th>
+        <th scope="col">Current Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table> --}}
   
-<div id="boardData"></div>
-<h1>Add surfboard to database</h1>
-<form class="inventory-form" >
-{{!-- <br action="/Develop/controllers/api/surfboard_routes.js" method="post"></br> --}}
-  <input type="text" id="board_num" placeholder="enter board number"></br>
-  <input type="text" id="brand" placeholder="enter board brand name"></br>
-  <input type="text" name="board_model" placeholder="enter board model name"></br>
-  <input type="number" name="legnth_inch" placeholder="enter board length in inches"></br>
-  <input type="checkbox" id="Checked_out" name="Checked_out" value="Checked_out"></br>
-  <label for="Checked_out">The board is currently checked out</label></br>
-  <input type="checkbox" id="damaged" name="damaged" value="damaged"></br>
-  <label for="damaged">The board is damaged</label></br>
-  <input type="text" name="fin_setup" placeholder="enter the fin setup style of the board"></br>
-  <input type="number" name="fin_count" placeholder="enter the fin count of the board"></br>
-  <input type="number" name="location_id" id="location_id" placeholder="enter the location id of the board"></br>
-  <input type="submit" value="submit"></br>
-</form>
+<div class="container">
+  <table class="table table-striped table-hover table-primary table-font">
+    <thead>
+      <tr>
+        <th scope="col">Board #</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Model</th>
+        <th scope="col">Length (in)</th>
+        <th scope="col">Checked Out</th>
+        <th scope="col">Damaged</th>
+        <th scope="col">Fin Setup</th>
+        <th scope="col">Fin #</th>
+        <th scope="col">Current Location</th>
+      </tr>
+    <tbody>
+      {{#each surfboards as |surfboard|}}
+      <tr>
+        <td>{{surfboard.board_num}}</td>
+        <td>{{surfboard.brand}}</td>
+        <td>{{surfboard.board_model}}</td>
+        <td>{{surfboard.length_inch}}</td>
+        <td>{{surfboard.checked_out}}</td>
+        <td>{{surfboard.damaged}}</td>
+        <td>{{surfboard.fin_setup}}</td>
+        <td>{{surfboard.fin_count}}</td>
+        <td>{{surfboard.location_id}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{!-- {{#each surfboards as |surfboard|}}
+
+
+
+
+
+  <tr> class="dish col-md-5">
+    <!-- We use dish.id instead of <od> and <li> elements. -->
+    <p>
+      {{surfboard.board_num}},
+    </p>
+  </div>
+  <div class="col-md-7">
+    <p>
+    {{surfboard.brand}}
+    </p>
+  </div>
+  {{/each}}
+
+</div> --}}
+
 
 {{!-- {{surfboard.brand}} --}}
 

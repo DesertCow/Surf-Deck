@@ -4,8 +4,10 @@ const { Surfboard, Location } = require('../../models')
 
 // the '/api/surfboards' endpoint
 
+
+
 //=========================== Surfboard Data View ==========================//
-//View all information from surfboard table
+// View all information from surfboard table
 router.get('/', (req, res) => {
   Surfboard.findAll({
     include: [
@@ -191,4 +193,4 @@ router.put('/:id', (req, res) => {
 
 });
 
-module.exports = router
+module.exports = router;

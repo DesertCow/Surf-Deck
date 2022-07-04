@@ -35,8 +35,6 @@ const displaySurfboards = async (event) => {
   // const board_num = document.querySelector('#board_num').value.trim();
   // const brand = document.querySelector('#brand').value.trim();
 
-
-
   const response = await fetch('/api/surfboards', {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
@@ -57,9 +55,11 @@ const displaySurfboards = async (event) => {
 };
 
 
+
+
 //document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
-document.querySelector('.inventory-form').addEventListener('submit', inventoryFormHandler);
+// document.querySelector('.inventory-form').addEventListener('submit', inventoryFormHandler);
 
 
 
-displaySurfboards();
+//displaySurfboards();
