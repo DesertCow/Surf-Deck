@@ -2,10 +2,11 @@
   --mainBG: #003049;
   --lightTextColor: #e3e4e3;
   --secondaryBG: azure;
+  --secondary: #FCBF49;
 
 
   --primary: #3d5852;
-  --secondary: #86938f;
+  
   --tertiary: #5e877f;
   --quatrinary: #6c6b67;
   
@@ -54,7 +55,7 @@ body {
 
 .headerBG {
   opacity: 95%;
-  background-color:#FCBF49;
+  background-color:var(--secondary);
   border-radius: 20px;
   font-family: 'Sonsie One', cursive;
   width: 100%;
@@ -147,6 +148,55 @@ form {
 
 .aboutCard {
   background-color: var(--secondaryBG);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 94%;
+}
+
+
+.aboutPageCard {
+  background-color: var(--secondaryBG);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 94%;
+
+}
+
+.aboutPageAbout {
+  color: black;
+  font-size: 50px;
+}
+
+.aboutPagePicture {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.aboutPageTitle {
+  font-size: 50px;
+}
+
+.theClubCard {
+  background-color:var(--secondary);
+  opacity: 94%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.shapersCard {
+  background-color: white;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;

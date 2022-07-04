@@ -1,14 +1,31 @@
-{{> header}}
-<h2> About </h2>
-
-<p>Lifes a Beach</p>
-
-<p> We are a surboard club with locations in Newport Beach, Huntington Beach and Long Beach. We provide our members with unlimited access and exchanges to a large variety of quality surfboards from stablished shapers throughout California. From 7'2" single fins and old school longboards to the latest high-performance shortboards, every surfer now has the ultimate quiver for all wave conditions. Membership also includes social events and activites, networking opportunities, surfboard design education, surf coaching, ocean skills and fitness training. </p>
-
-{{!-- Used to connect about handlebar to the header handlebar --}}
-{{!-- app.get('/about', (req, res) => {
-  res.render('about', {
-    title: 'About Us'
-    description: 'We are a local surfboard renting business'
-  });
-}); --}}
+<div class="aboutPageCard">
+  <h1 class="aboutPageAbout text-center p-4 m-3">About</h1>
+  <div class="container d-flex">
+    <row class="row justify-content-center align-items-center m-0 p-1">
+        <div class="col p-2 m-1 theClubCard">
+          <h2 class="aboutPageTitle text-center pb-0 pt-3 m-3">The Club</h2>
+          <p class=""> We are a surboard club with locations in Newport Beach, Huntington Beach and Long Beach.
+            We provide our members with unlimited access and exchanges to a large variety of quality surfboards
+            from stablished shapers throughout California. From 7'2" single fins and old school longboards to
+            the latest high-performance shortboards, every surfer now has the ultimate quiver for all wave
+            conditions. Membership also includes social events and activites, networking opportunities,
+            surfboard design education, surf coaching, ocean skills and fitness training.
+          </p>
+        </div>
+        <img class="col aboutPagePicture m-4 p-2" src="./img/Newport_Location_Outside.jpg" alt="" width="300" height="300">
+    </row>
+  </div>
+</div>
+<div class="shapersCard mt-5">
+  <div class="container d-flex">
+    <row class="row justify-content-center align-items-center m-0 p-1">
+      <h2 class="row aboutPageTitle text-center pb-0 pt-3 m-3 justify-content-center align-items-center">SURFBOARDS</h2>
+        <div class="col p-2 m-1 d-flex justify-content-around align-items-center">
+          <div class="row">
+            <img class="col aboutPagePicture m-4 p-4" src="./img/Dano_logo.png" alt="" width="200" height="200">
+            <img class="col aboutPagePicture m-4 p-4" src="./img/Almond_Logo.png" alt="" width="200" height="200">
+            <img class="col aboutPagePicture m-4 p-4" src="./img/Album_Logo.png" alt="" width="200" height="200">
+          </div>
+    </row>
+  </div>
+</div>
