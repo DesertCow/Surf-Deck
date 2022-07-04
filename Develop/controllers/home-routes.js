@@ -2,16 +2,12 @@ const router = require('express').Router();
 const Surfboard = require('../models/surfboard')
 
 
-// the '/api/surfboards' endpoint
-
-
 //View all information from surfboard table
 router.get('/', (req, res) => {
   Surfboard.findAll()
 
   res.render('home', {
   })
-
 
   // .then(surfboardData => res.json(surfboardData))
   // .catch(err => {
@@ -20,15 +16,26 @@ router.get('/', (req, res) => {
   // });
 })
 
-router.get('/inventory', (req, res) => {
+router.get('/inventory', async (req, res) => {
 
   console.log("/inventory");
 
-  res.render('inventory', {
+  try {
+    const surfboardDB = await Surfboard.findAll();
 
-  })
+    const surfboards = surfboardDB.map((surfboard) =>
+      surfboard.get({ plain: true })
+    );
 
-})
+    res.render('inventory', { surfboards });
+
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+});
+
 
 router.get('/login', (req, res) => {
 
@@ -69,13 +76,5 @@ router.get('/contact', (req, res) => {
   })
 
 })
-
-// router.get('/surfboardinfo', (req, res) => {
-//   console.log('/surfboardinfo');
-//   res.render('surfboardinfo', {
-
-//   })
-// })
-
 
 module.exports = router
