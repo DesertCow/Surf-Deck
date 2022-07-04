@@ -82,4 +82,24 @@ router.get('/contact', async (req, res) => {
 
 })
 
+
+router.get('/rentals', async (req, res) => {
+
+
+  try {
+    const surfboardDB = await Surfboard.findAll();
+
+    const surfboards = surfboardDB.map((surfboard) =>
+      surfboard.get({ plain: true })
+    );
+
+    res.render('rental', { surfboards });
+
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+
+});
+
 module.exports = router

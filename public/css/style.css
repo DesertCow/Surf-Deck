@@ -135,15 +135,17 @@ form {
 .welcome {
   font-size: 80px;
   color: var(--lightTextColor);
-
+  font-family: monospace
 }
 
 .aboutTitle {
-  font-size: 40px;
+  font-size: 50px;
+  font-family: monospace
 }
 
 .aboutText {
-  font-size: 20px;
+  font-size: 35px;
+  font-family: monospace
 }
 
 .aboutCard {
@@ -170,7 +172,8 @@ form {
 
 .aboutPageAbout {
   color: black;
-  font-size: 50px;
+  font-size: 70px;
+  font-family: monospace
 }
 
 .aboutPagePicture {
@@ -185,6 +188,10 @@ form {
   font-size: 50px;
 }
 
+.theClubCard P {
+  font-size: 24px;
+}
+
 .theClubCard {
   background-color:var(--secondary);
   opacity: 94%;
@@ -193,6 +200,7 @@ form {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  font-family: monospace;
 }
 
 .shapersCard {
@@ -203,4 +211,20 @@ form {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   opacity: 94%;
+}
+
+.board-rental {
+  font-family: monospace;
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+}
+
+.rental-header {
+  font-size: 50px;
+  color:white;
+  font-family: monospace;
 }

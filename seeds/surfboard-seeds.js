@@ -25,8 +25,7 @@ const surfboardData = [
     damaged: false,
     fin_setup: 'setup 1',
     fin_count: 3,
-    location_id: 3,
-    filename: '1001-surfboard'
+    location_id: 3
   },
   {
     board_num: '1002',
