@@ -228,3 +228,37 @@ form {
   color:white;
   font-family: monospace;
 }
+
+/* =================== Footer ===================  */
+
+footer {
+  margin-top: 350px;
+  bottom: 0;
+  text-align: center;
+  background: var(--secondary);
+  color: white;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+footer ul li {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+footer ul {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footerTitle {
+  font-size: 45px;
+  font-family: 'Monoton', cursive;
+  color: black;
+}
