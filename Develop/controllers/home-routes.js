@@ -70,5 +70,12 @@ router.get('/contact', (req, res) => {
 
 })
 
+// router.get('/surfboardinfo', (req, res) => {
+//   console.log('/surfboardinfo');
+//   res.render('surfboardinfo', {
+
+//   })
+// })
+
 
 module.exports = router
