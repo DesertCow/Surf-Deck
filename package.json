@@ -23,5 +23,14 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.21.2"
   },
-  "description": ""
+  "description": "![badge](https://img.shields.io/badge/license-MIT-blue)",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesertCow/Surf-Deck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DesertCow/Surf-Deck/issues"
+  },
+  "homepage": "https://github.com/DesertCow/Surf-Deck#readme"
 }
