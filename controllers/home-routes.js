@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const Surfboard = require('../models/surfboard')
-
+const Location = require('../models/location')
 
 //View all information from surfboard table
 router.get('/', (req, res) => {
@@ -9,11 +9,7 @@ router.get('/', (req, res) => {
   res.render('home', {
   })
 
-  // .then(surfboardData => res.json(surfboardData))
-  // .catch(err => {
-  //   console.log(err);
-  //   res.status(500).json(err);
-  // });
+
 })
 
 router.get('/inventory', async (req, res) => {
@@ -67,13 +63,22 @@ router.get('/about', (req, res) => {
 
 })
 
-router.get('/contact', (req, res) => {
+router.get('/contact', async (req, res) => {
 
   console.log("/contact");
+  try {
+    const locationDB = await Location.findAll();
 
-  res.render('contact', {
+    const locations = locationDB.map((location) =>
+      location.get({ plain: true })
+    );
 
-  })
+
+    res.render('contact', { locations })
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 
 })
 
