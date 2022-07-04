@@ -1,3 +1,22 @@
+:root {
+  --mainBG: #003049;
+  --lightTextColor: #e3e4e3;
+  --secondaryBG: azure;
+
+
+  --primary: #3d5852;
+  --secondary: #86938f;
+  --tertiary: #5e877f;
+  --quatrinary: #6c6b67;
+  
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+}
+
+
+
 html,
 body {
   height: 100%;
@@ -12,7 +31,7 @@ body {
   min-height: 100vh;
   padding-top: 20px;
   padding-bottom: 40px;
-  background-color: #003049;
+  background-color: var(--mainBG);
 }
 
 .form-signin {
@@ -34,6 +53,7 @@ body {
 }
 
 .headerBG {
+  opacity: 95%;
   background-color:#FCBF49;
   border-radius: 20px;
   font-family: 'Sonsie One', cursive;
@@ -104,15 +124,33 @@ form {
 }
 
 .home-main-img {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
 }
 
 .welcome {
   font-size: 80px;
-  color: blanchedalmond;
+  color: var(--lightTextColor);
 
+}
+
+.aboutTitle {
+  font-size: 40px;
+}
+
+.aboutText {
+  font-size: 20px;
+}
+
+.aboutCard {
+  background-color: var(--secondaryBG);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 94%;
 }
