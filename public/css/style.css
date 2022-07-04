@@ -6,7 +6,11 @@ body {
 body {
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
   padding-bottom: 40px;
   background-color: #003049;
 }
@@ -97,4 +101,18 @@ form {
 .table-font {
 
   font-size: 20px;
+}
+
+.home-main-img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.welcome {
+  font-size: 80px;
+  color: blanchedalmond;
+
 }
