@@ -62,7 +62,7 @@ router.post('/', (req, res) => {
 });
 
 
-//=========================== Surfboard Data Update ==========================//
+//=========================== Location Data Update ==========================//
 
 router.put('/:id', (req, res) => {
   console.info(`${req.method} request received to update a location`)

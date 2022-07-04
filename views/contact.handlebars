@@ -4,38 +4,19 @@
     have a sick day on your "sick days" from work.</p>
 </section>
 <section class="d-flex flex-row justify-content-around">
+  {{#each locations as |location|}}
   <div class="card p-2" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <img class="card-img-top" src="./img/{{location.img}}" alt="Card image cap" width="300" height="300">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+      <h5 class="card-title">{{location.city}}</h5>
+      <p class="card-text"> hours of operation: {{location.hours}}</p>
+      <p class="card-text"> address: {{location.address}}</p>
+      <p class="card-text"> phone number: {{location.phonenumber}}</p>
 
-  <div class="card p-2" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
     </div>
   </div>
-
-  <div class="card p-2" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+{{/each}}
 
 </section>
 
@@ -80,3 +61,5 @@
   </form>
   <!-- Default form contact -->
 </section>
+
+<script src="./js/database.js"></script>

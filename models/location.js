@@ -15,13 +15,29 @@ Location.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    phonenumber: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    hours: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    img: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     modelName: 'location',
-    underscored: true,
+
 
   }
 
