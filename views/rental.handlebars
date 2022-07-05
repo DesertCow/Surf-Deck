@@ -1,20 +1,24 @@
-<h1 class="rental-header">Rentals Available</h1>
 
-<div class="board-rental">
-  
-  {{#each surfboards as |surfboard|}}
+<div class="rentalsContainer p-2 m-2">
+  <h1 class="rental-header">Rentals Available</h1>
+
+  <div class="board-rental">
+
+    {{#each surfboards as |surfboard|}}
     <section class="surfboard-data">
       <img src="/public/img/1001-surfboard.png" alt="">
-  
+
       <h2> {{surfboard.brand}} {{surfboard.board_model}} </h2>
       <p> Board # : {{surfboard.board_num}} </p>
       <p> Length: {{surfboard.length_inch}} </p>
       <p> Located at : {{surfboard.location_id}} </p>
-      
+
       <button class="checkout{{surfboard.board_num}}"> Rent </button>
 
     </section>
-  {{/each}}
+    {{/each}}
+  </div>
 </div>
+
 
 <script src="./js/rental.js"></script>

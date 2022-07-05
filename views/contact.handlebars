@@ -1,11 +1,6 @@
-<section class="d-flex flex-row justify-content-center">
-  <p>Listed below is the surfboard rental team that is behind the excellent service we provide every day. A feedback
-    form is also provided below to leave a review on our service or recieve emails and updates from us. Let us help you
-    have a sick day on your "sick days" from work.</p>
-</section>
-<section class="d-flex flex-row justify-content-around">
+<section class="d-flex mb-5 flex-row justify-content-around">
   {{#each locations as |location|}}
-  <div class="card p-2" style="width: 18rem;">
+  <div class="card p-2 locationCards" style="width: 18rem;">
     <img class="card-img-top" src="./img/{{location.img}}" alt="Card image cap" width="300" height="300">
     <div class="card-body">
       <h5 class="card-title">{{location.city}}</h5>
@@ -21,10 +16,7 @@
 </section>
 
 <section class="d-flex flex-row justify-content-center">
-
-
-  <form class="text-center border border-light p-5" style="width: 40rem" action="#!">
-
+  <form class="text-center border border-light p-5 contactFormCard" style="width: 40rem" action="#!">
     <p class="h4 mb-4">Contact us</p>
 
     <!-- Name -->
