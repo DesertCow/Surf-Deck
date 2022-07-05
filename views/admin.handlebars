@@ -163,4 +163,141 @@
   toggle display: Delete Board Form
 </button>
 
+<form class="collapse" id="modifyboardForm">
+  <div class="mb-3">
+    <label for="modifyboardId" class="form-label">Surfboard ID</label>
+    <input type="number" class="form-control" id="modifyboardId">
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardNumber" class="form-label">Surfboard Number</label>
+    <input type="number" class="form-control" id="modifyboardNumber" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardBrand" class="form-label">Surfboard Brand</label>
+    <input type="text" class="form-control" id="modifyboardBrand">
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardModel" class="form-label">Surfboard Model</label>
+    <input type="text" class="form-control" id="modifyboardModel">
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardLength" class="form-label">Surfboard Length (inches)</label>
+    <input type="number" class="form-control" id="modifyboardLength">
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardFinsetup" class="form-label">Surfboard Fin Setup</label>
+    <input type="text" class="form-control" id="modifyboardFinsetup">
+  </div>
+  <div class="mb-3">
+    <label for="modifyboardFincount" class="form-label">Surfboard Fin Count</label>
+    <input type="number" class="form-control" id="modifyboardFincount">
+  </div>
+
+  <div class="mb-3">
+    <label for="modifyboardLocation" class="form-label">Location ID</label>
+    <input type="number" class="form-control" id="modifyboardLocation">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="modifyboardCheckedout">
+    <label class="form-check-label" for="modifyboardCheckedout">Added Surfboard is Checked out</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="modifyboardDamaged">
+    <label class="form-check-label" for="modifyboardDamaged">Added Surfboard is Damaged</label>
+  </div>
+  <button type="submit" class="btn btn-primary modifyboardBtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#modifyboardForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Update Board Form
+</button>
+
+
+<form class="collapse" id="adduserForm">
+  <div class="mb-3">
+    <label for="adduserName" class="form-label">User Name</label>
+    <input type="text" class="form-control" id="adduserName" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="adduserEmail" class="form-label">User Email</label>
+    <input type="text" class="form-control" id="adduserEmail" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="adduserPassword" class="form-label">User Password</label>
+    <input type="text" class="form-control" id="adduserPassword" aria-describedby="emailHelp">
+  </div>
+
+  <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#adduserForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Add User Form
+</button>
+
+<form class="collapse" id="deleteuserForm">
+  <div class="mb-3">
+    <label for="deleteuser" class="form-label">Enter the ID of the User to be Deleted</label>
+    <input type="number" class="form-control" id="deleteuser" aria-describedby="emailHelp">
+
+  </div>
+  <button type="submit" class="btn btn-primary deleteuserBtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deleteuserForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Delete User Form
+</button>
+
+
+
+
+<form class="collapse" id="addlocationForm">
+  <div class="mb-3">
+    <label for="addlocationCity" class="form-label">Location City</label>
+    <input type="text" class="form-control" id="addlocationCity" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="addlocationAddress" class="form-label">Location Address</label>
+    <input type="text" class="form-control" id="addlocationAddress" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="addlocationPhonenumber" class="form-label">Location Phone Number</label>
+    <input type="number" class="form-control" id="addlocationPhonenumber" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="addlocationHours" class="form-label">Location Hours</label>
+    <input type="text" class="form-control" id="addlocationHours" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="addlocationImg" class="form-label">Location Img Filename</label>
+    <input type="text" class="form-control" id="addlocationImg" aria-describedby="emailHelp">
+  </div>
+
+  <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#addlocationForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Add Location Form
+</button>
+
+<form class="collapse" id="deletelocationForm">
+  <div class="mb-3">
+    <label for="deletelocation" class="form-label">Enter the ID of the Location to be Deleted</label>
+    <input type="number" class="form-control" id="deletelocation" aria-describedby="emailHelp">
+
+  </div>
+  <button type="submit" class="btn btn-primary deletelocationBtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deletelocationForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Delete Location Form
+</button>
+
 <script src="./js/admin.js"></script>

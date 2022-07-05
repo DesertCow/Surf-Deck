@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 //=========================== Location Data Delete ==========================//
 
 // Delete location selection by ID
-router.delete('/id/:id', async (req, res) => {
+router.delete('/delete/id/:id', async (req, res) => {
   console.info(`${req.method} request received to delete a location`)
   try {
     const location = await Location.destroy({
@@ -43,7 +43,7 @@ router.delete('/id/:id', async (req, res) => {
 //=========================== Location Data Post ==========================//
 
 // Creates new Location
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
   console.info(`${req.method} request received to create location`);
   // {
   //   city: "Huntington Beach",

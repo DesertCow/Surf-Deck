@@ -163,7 +163,7 @@ router.post('/add', (req, res) => {
 
 //=========================== Surfboard Data Update ==========================//
 
-router.put('/:id', (req, res) => {
+router.put('/update/:id', (req, res) => {
   console.info(`${req.method} request received to update a surfboard`)
   console.log(req.body)
   //Example request body

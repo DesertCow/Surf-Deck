@@ -50,7 +50,7 @@ router.post('/signup', (req, res) => {
 
 //=========================== User Data Delete ==========================//
 // Delete surfboard selection by ID
-router.delete('/id/:id', async (req, res) => {
+router.delete('/delete/id/:id', async (req, res) => {
   console.info(`${req.method} request received to delete a user`)
   try {
     const user = await User.destroy({
