@@ -48,6 +48,28 @@ router.post('/signup', (req, res) => {
   });
 })
 
+//=========================== User Data Delete ==========================//
+// Delete surfboard selection by ID
+router.delete('/id/:id', async (req, res) => {
+  console.info(`${req.method} request received to delete a user`)
+  try {
+    const user = await User.destroy({
+      where: {
+        id: req.params.id,
+      }
+    })
+    if (!user) {
+      res.status(404).json({ message: 'no user with this id!' })
+      console.log('no user with this id!')
+      return
+    }
+    res.status(200).json(user)
+  } catch (err) {
+    res.status(500).json(err)
+  }
+});
+
+
 //=========================== Login/Auth ==========================//
 router.post('/login', async (req, res) => {
   try {

@@ -42,12 +42,15 @@ router.delete('/id/:id', async (req, res) => {
 
 //=========================== Location Data Post ==========================//
 
-// Creates new surfboard
+// Creates new Location
 router.post('/', (req, res) => {
   console.info(`${req.method} request received to create location`);
-  //Example request body
   // {
-  //   "city": "Seal Beach",
+  //   city: "Huntington Beach",
+  //     address: "12345 fakeaddress",
+  //       phonenumber: "111-111-1111",
+  //         hours: "12am - 9pm",
+  //           img: "1001-surfboard.png",
   // }
 
   Location.create(req.body)
@@ -70,6 +73,9 @@ router.put('/:id', (req, res) => {
   //Example request body
   // {
   //   "city": "Seal Beach",
+  //   "address": "12534 fake st.",
+  //   "hours": "12pm-6pm",
+  //   "img": "*image name here from public folder"
   // }
   Location.update(req.body, {
     where: {

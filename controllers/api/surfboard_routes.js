@@ -92,7 +92,7 @@ router.get('/board_num/:board_num', (req, res) => {
 //=========================== Surfboard Data Delete ==========================//
 
 // Delete surfboard selection by ID
-router.delete('/id/:id', async (req, res) => {
+router.delete('/delete/id/:id', async (req, res) => {
   console.info(`${req.method} request received to delete a surfboard`)
   try {
     const surfboard = await Surfboard.destroy({
@@ -112,7 +112,7 @@ router.delete('/id/:id', async (req, res) => {
 });
 
 // Delete surfboard selection by board number
-router.delete('/board_num/:board_num', async (req, res) => {
+router.delete('/delete/board_num/:board_num', async (req, res) => {
   console.info(`${req.method} request received to delete a surfboard`)
   try {
     const surfboard = await Surfboard.destroy({
@@ -134,7 +134,7 @@ router.delete('/board_num/:board_num', async (req, res) => {
 //=========================== Surfboard Data Post ==========================//
 
 // Creates new surfboard
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
   console.info(`${req.method} request received to create surfboard`);
   //Example request body
   // {
@@ -146,7 +146,7 @@ router.post('/', (req, res) => {
   //   "damaged": true,
   //   "fin_setup": "setup 3",
   //   "fin_count": "1",
-  //   "location": "Huntington Beach"
+  //   "location_id": "2"
   // }
 
   Surfboard.create(req.body)
