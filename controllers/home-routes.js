@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const Surfboard = require('../models/surfboard')
 const Location = require('../models/location')
+const User = require('../models/user')
 
 //View all information from surfboard table
 router.get('/', (req, res) => {
@@ -101,5 +102,41 @@ router.get('/rentals', async (req, res) => {
   }
 
 });
+
+
+router.get('/admin', async (req, res) => {
+
+  console.log("/admin");
+  try {
+    const surfboardDB = await Surfboard.findAll();
+
+    const surfboards = surfboardDB.map((surfboard) =>
+      surfboard.get({ plain: true })
+    );
+
+    const userDB = await User.findAll();
+
+    const users = userDB.map((user) =>
+      user.get({ plain: true })
+    );
+
+    const locationDB = await Location.findAll();
+
+    const locations = locationDB.map((location) =>
+      location.get({ plain: true })
+    )
+
+
+
+    res.render('admin', {
+      surfboards, users, locations
+
+    })
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+})
+
 
 module.exports = router

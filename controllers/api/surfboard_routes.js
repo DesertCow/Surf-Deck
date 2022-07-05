@@ -134,7 +134,7 @@ router.delete('/board_num/:board_num', async (req, res) => {
 //=========================== Surfboard Data Post ==========================//
 
 // Creates new surfboard
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
   console.info(`${req.method} request received to create surfboard`);
   //Example request body
   // {
@@ -146,7 +146,7 @@ router.post('/', (req, res) => {
   //   "damaged": true,
   //   "fin_setup": "setup 3",
   //   "fin_count": "1",
-  //   "location": "Huntington Beach"
+  //   "location_id": "2"
   // }
 
   Surfboard.create(req.body)
