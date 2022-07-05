@@ -1,6 +1,12 @@
 
 console.log("!@!!!InventoryFormHandler");
 
+const table = new simpleDatatables.DataTable("table")
+
+// const dataTable = new DataTable("#boardTable", {
+//   searchable: false,
+//   fixedHeight: true,
+// });
 
 const inventoryFormHandler = async (event) => {
   event.preventDefault();
