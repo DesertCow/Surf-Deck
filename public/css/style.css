@@ -1,13 +1,14 @@
 :root {
-  --mainBG: #003049;
+  --mainBG: #4A86FC;
   --lightTextColor: #e3e4e3;
   --secondaryBG: azure;
   --secondary: #FCBF49;
+  --tertiary: #4DC8C3;
 
+  --navLinks: #C14AFC;
 
   --primary: #3d5852;
   
-  --tertiary: #5e877f;
   --quatrinary: #6c6b67;
   
   --light: #e3e4e3;
@@ -81,7 +82,7 @@ form {
 .nav-link {
   width: 100%;
   font-size: 30px;
-  background-color:#FC4A4A;
+  background-color: var(--navLinks);
   /* font-family: 'Orbitron', sans-serif; */
   font-family: 'Sonsie One', cursive;
   border-radius: 15px;
@@ -160,13 +161,13 @@ form {
 
 
 .aboutPageCard {
-  background-color: var(--secondaryBG);
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   opacity: 94%;
+  background-color: var(--tertiary);
 
 }
 
@@ -186,6 +187,36 @@ form {
 
 .aboutPageTitle {
   font-size: 50px;
+}
+
+.rentalsContainer {
+  background-color: var(--tertiary);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 96%;
+}
+
+.contactFormCard {
+  background-color: var(--tertiary);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 96%;
+
+}
+
+.surfboardCard {
+  background-color: var(--tertiary);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .theClubCard P {
@@ -227,4 +258,43 @@ form {
   font-size: 50px;
   color:white;
   font-family: monospace;
+}
+
+.locationCards {
+  background: var(--tertiary);
+}
+
+/* =================== Footer ===================  */
+
+footer {
+  margin-top: 350px;
+  bottom: 0;
+  text-align: center;
+  background: var(--secondary);
+  color: white;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 96%;
+}
+
+
+footer ul li {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+footer ul {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footerTitle {
+  font-size: 45px;
+  font-family: 'Monoton', cursive;
+  color: black;
 }

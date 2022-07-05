@@ -18,7 +18,7 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       {{> header}}
@@ -26,6 +26,9 @@
     <main class="container container-fluid mt-5">
       {{{ body }}}
     </main>
+   <footer class="mt-auto mb-0">
+    {{> footer}}
+   </footer> 
   </div>
 </body>
 
