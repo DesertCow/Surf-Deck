@@ -36,7 +36,7 @@
 
 <button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#surfboardtable"
   aria-expanded="false" aria-controls="collapseExample">
-  toggle display surfboard data table
+  toggle display: surfboard data table
 </button>
 
 <div class="container collapse" id="usertable">
@@ -65,7 +65,7 @@
 </div>
 <button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#usertable"
   aria-expanded="false" aria-controls="collapseExample">
-  toggle display user data table
+  toggle display: user data table
 </button>
     
 <div class="container collapse" id="locationtable">
@@ -98,7 +98,7 @@
 </div>
 <button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#locationtable"
   aria-expanded="false" aria-controls="collapseExample">
-  toggle display location data table
+  toggle display: location data table
 </button>
 
 
@@ -143,11 +143,24 @@
     <input type="checkbox" class="form-check-input" id="addboardDamaged">
     <label class="form-check-label" for="addboardDamaged">Added Surfboard is Damaged</label>
   </div>
-  <button type="submit" id="addboardBtn" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary addboardBtn">Submit</button>
 </form>
 <button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#addboardForm"
   aria-expanded="false" aria-controls="collapseExample">
-  toggle display Add Board Form
+  toggle display: Add Board Form
 </button>
 
-<script src="./public/js/admin.js"></script>
+<form class="collapse" id="deleteboardForm">
+  <div class="mb-3">
+    <label for="deleteboard" class="form-label">Enter the ID of the Board to be Deleted</label>
+    <input type="number" class="form-control" id="deleteboard" aria-describedby="emailHelp">
+  
+  </div>
+  <button type="submit" class="btn btn-primary deleteboardBtn">Submit</button>
+</form>
+<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deleteboardForm"
+  aria-expanded="false" aria-controls="collapseExample">
+  toggle display: Delete Board Form
+</button>
+
+<script src="./js/admin.js"></script>

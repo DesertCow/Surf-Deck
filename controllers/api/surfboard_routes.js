@@ -92,7 +92,7 @@ router.get('/board_num/:board_num', (req, res) => {
 //=========================== Surfboard Data Delete ==========================//
 
 // Delete surfboard selection by ID
-router.delete('/id/:id', async (req, res) => {
+router.delete('/delete/id/:id', async (req, res) => {
   console.info(`${req.method} request received to delete a surfboard`)
   try {
     const surfboard = await Surfboard.destroy({
@@ -112,7 +112,7 @@ router.delete('/id/:id', async (req, res) => {
 });
 
 // Delete surfboard selection by board number
-router.delete('/board_num/:board_num', async (req, res) => {
+router.delete('/delete/board_num/:board_num', async (req, res) => {
   console.info(`${req.method} request received to delete a surfboard`)
   try {
     const surfboard = await Surfboard.destroy({
