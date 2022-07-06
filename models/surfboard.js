@@ -53,6 +53,9 @@ Surfboard.init(
         model: 'location',
         key: 'id',
       }
+    },
+    img: {
+      type: DataTypes.STRING,
     }
   },
   {

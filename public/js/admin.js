@@ -16,6 +16,7 @@ const addboardFormHandler = async (event) => {
   const fin_setup = document.querySelector('#addboardFinsetup').value.trim();
   const fin_count = document.querySelector('#addboardFincount').value.trim();
   const location_id = document.querySelector('#addboardLocation').value.trim();
+  const img = document.querySelector('#addboardImg').value.trim();
   var checked_out = document.getElementById('addboardCheckedout');
   var damaged = document.getElementById('addboardDamaged');
 
@@ -75,6 +76,7 @@ const modifyboardFormHandler = async (event) => {
   let fin_setup = document.querySelector('#modifyboardFinsetup').value.trim().length > 0 ? document.querySelector('#modifyboardFinsetup').value.trim() : null;
   let fin_count = document.querySelector('#modifyboardFincount').value.trim().length > 0 ? document.querySelector('#modifyboardFincount').value.trim() : null;
   let location_id = document.querySelector('#modifyboardLocation').value.trim().length > 0 ? document.querySelector('#modifyboardLocation').value.trim() : null;
+  let img = document.querySelector('#modifyboardImg').value.trim().length > 0 ? document.querySelector('#modifyboardImg').value.trim() : null;
   let checked_out = document.getElementById('modifyboardCheckedout').checked;
   let damaged = document.getElementById('modifyboardDamaged').checked;
 
@@ -91,6 +93,7 @@ const modifyboardFormHandler = async (event) => {
   if (length_inch) { bodyReq.length_inch = parseInt(length_inch) }
   if (fin_setup) { bodyReq.fin_setup = fin_setup }
   if (fin_count) { bodyReq.fin_count = parseInt(fin_count) }
+  if (img) { bodyReq.img = img }
   if (location_id) { bodyReq.location_id = parseInt(location_id) }
 
   console.log(bodyReq)
