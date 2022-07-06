@@ -1,3 +1,7 @@
+* {
+  font-family: monospace;
+}
+
 :root {
   --mainBG: #99D5FF;
   --lightTextColor: #e3e4e3;
