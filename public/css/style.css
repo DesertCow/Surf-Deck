@@ -88,6 +88,41 @@ body {
   background-color:var(--tertiary);
 }
 
+.rentBox {
+  background-color: var(--quatrinary);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 250px;
+}
+
+.rentBtn {
+  width: 950px;
+  height: 150px;
+}
+
+.boardRentalCard {
+  background-color: grey;
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  opacity: 94%;
+}
+
+.boardCardTitle {
+  font-size: 15px;
+}
+
+section h3 {
+
+}
+
 form {
   background-color: white;
 
