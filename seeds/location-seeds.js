@@ -3,24 +3,24 @@ const { Location } = require('../models')
 const locationData = [
   {
     city: 'Huntington Beach',
-    address: '12345 fakeaddress ',
-    phonenumber: '111-111-1111',
-    hours: '12am - 9pm',
-    img: '1001-surfboard.png',
+    address: '300 Pacific Coast Hwy, Huntington Beach, CA 92648',
+    phonenumber: '949-855-6654',
+    hours: '8am - 6pm',
+    img: 'Huntington_Beach_1.jpeg',
   },
   {
     city: 'Newport Beach',
-    address: '1337 real street ave.',
-    phonenumber: '222-222-2222',
-    hours: '4pm-5pm',
-    img: 'Huntington_beach_1.jpg',
+    address: '408 31st St, Newport Beach, CA 92663',
+    phonenumber: '949-722-5848',
+    hours: '8am-6pm',
+    img: 'Newport_Location_Outside.jpg',
   },
   {
     city: 'Long Beach',
-    address: '80085 very real st.',
-    phonenumber: '333-333-3333',
-    hours: '2am-11pm',
-    img: 'surfboard_icon.png',
+    address: '2300 E Ocean Blvd, Long Beach, CA 90803',
+    phonenumber: '949-785-9875',
+    hours: '7am-6pm',
+    img: 'Long_Beach_1.jpg',
   },
 ]
 
