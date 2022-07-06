@@ -63,8 +63,7 @@ async function startLocalServer() {
   sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
       console.log(`\n\x1b[42m  ~~~ Local Server Start Success! ~~~  \x1b[0m`);
-      console.log(`\x1b[45m    http://localhost:${PORT}/api/   \x1b[0m`);
-
+      console.log(`\x1b[45m    http://localhost:${PORT}   \x1b[0m`);
 
     });
   });
