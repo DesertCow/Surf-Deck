@@ -37,6 +37,7 @@ router.post('/signup', (req, res) => {
       User.create(req.body)
         .then((user) => {
           console.log(user)
+          req.session.loggedIn = true
           res.status(200).json(user)
         })
         .catch((err) => {
@@ -87,6 +88,7 @@ router.post('/login', async (req, res) => {
       res.status(400).json({ message: 'Login failed. Please try again!' });
       return;
     }
+    req.session.loggedIn = true
     res.status(200).json({ message: 'You are now logged in!' });
   } catch (err) {
     res.status(500).json(err);
