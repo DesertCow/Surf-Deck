@@ -93,6 +93,21 @@ form {
 
 }
 
+.adminTitle {
+  font-size: 90px;
+  font-family: 'Monoton', cursive;
+}
+
+.adminToolBox {
+  background-color: rgba(238, 236, 236, 0.777);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 96%;
+}
+
 .signupPicture {
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -130,7 +145,7 @@ form {
 }
  
 .login-form {
-  background-color: var(--tertiary);
+  background-color: #4DC8C3;
   width: 450px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -149,6 +164,12 @@ form {
 .table-font {
 
   font-size: 20px;
+}
+
+.adminBtn {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .home-main-img {

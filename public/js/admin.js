@@ -1,3 +1,7 @@
+
+
+const table = new simpleDatatables.DataTable("table")
+
 //--------------------------SURFBOARD ADMIN CONTROLS-----------------------------
 const addboardFormHandler = async (event) => {
   event.preventDefault();
