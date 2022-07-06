@@ -146,7 +146,8 @@ router.post('/add', (req, res) => {
   //   "damaged": true,
   //   "fin_setup": "setup 3",
   //   "fin_count": "1",
-  //   "location_id": "2"
+  //   "location_id": "2",
+  //   "img": "surfboard_02.jpeg"
   // }
 
   Surfboard.create(req.body)
@@ -176,7 +177,8 @@ router.put('/update/:id', (req, res) => {
   //   "damaged": true,
   //   "fin_setup": "setup 3",
   //   "fin_count": "1",
-  //   "location": "Huntington Beach"
+  //   "location": "Huntington Beach",
+  //   "img": "1001-surfboard.jpeg"
   // }
   Surfboard.update(req.body, {
     where: {
