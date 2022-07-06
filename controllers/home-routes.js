@@ -6,11 +6,10 @@ const User = require('../models/user')
 //View all information from surfboard table
 router.get('/', (req, res) => {
   Surfboard.findAll()
-
-  res.render('home', {
-  })
-
-
+  
+  // req.session.loggedIn = false;
+  let loggedIn = req.session.loggedIn
+  res.render('home', { loggedIn })
 })
 
 router.get('/inventory', async (req, res) => {
@@ -35,13 +34,21 @@ router.get('/inventory', async (req, res) => {
 
 
 router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/', { home, loggedIn: req.session.loggedIn });
+    return;
+  }
+  res.render('login');
+});
 
-  console.log("/login");
-
-  res.render('login', {
-
-  })
-
+router.post('/logout', (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
 })
 
 router.get('/signup', (req, res) => {

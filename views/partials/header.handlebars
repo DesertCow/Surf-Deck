@@ -9,7 +9,11 @@
   <li class="m-4 p-2"><a href="/contact" class="nav-link px-2 m-1 link-dark">Contact</a></li>
   <li class="m-4 p-2 justify-content-center">
     <div class="text-end loginAndSignBtn align-items-center justify-content-center">
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      {{else}}
       <a href="/login" class="d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary me-2 justify-content-center align-items-center">Login</button></a>
+      {{/if}}
     </div>
   </li>
   <li class="m-4 p-2 justify-content-center">
@@ -17,4 +21,8 @@
       <a href="/signup" class="d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary">Sign-up</button></a>
     </div>
   </li>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </ul>
+
