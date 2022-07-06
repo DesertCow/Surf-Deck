@@ -1,8 +1,11 @@
 
 
-const table = new simpleDatatables.DataTable("table")
+const table = new simpleDatatables.DataTable("#surfboardtableid")
+const table2 = new simpleDatatables.DataTable("#usertableid")
+const table3 = new simpleDatatables.DataTable("#locationtableid")
+//--------------------------SURFBOARD ADMIN CONTROLS-----------------------------//
 
-//--------------------------SURFBOARD ADMIN CONTROLS-----------------------------
+//---------------------------ADD SURFBOARD-------------------------------------//
 const addboardFormHandler = async (event) => {
   event.preventDefault();
 
@@ -37,7 +40,7 @@ const addboardFormHandler = async (event) => {
   console.log('Surfboard Addition Exit')
 };
 
-
+//---------------------------DELETE SURFBOARD-------------------------------------//
 const deleteboardFormHandler = async (event) => {
   event.preventDefault();
   const id = document.querySelector('#deleteboard').value.trim();
@@ -60,6 +63,7 @@ const deleteboardFormHandler = async (event) => {
   console.log('Surfboard Deletion Exit')
 };
 
+//---------------------------MODIFY SURFBOARD-------------------------------------//
 const modifyboardFormHandler = async (event) => {
   event.preventDefault();
   const id = document.querySelector('#modifyboardId').value.trim();
@@ -94,8 +98,9 @@ const modifyboardFormHandler = async (event) => {
   console.log('Surfboard Update Exit')
 };
 
-//--------------------------USER ADMIN CONTROLS-----------------------------
+//--------------------------USER ADMIN CONTROLS-----------------------------//
 
+//--------------------------- ADD USER -------------------------------------//
 const adduserFormHandler = async (event) => {
   event.preventDefault();
 
@@ -123,7 +128,7 @@ const adduserFormHandler = async (event) => {
   }
   console.log('User Addition Exit')
 };
-
+//--------------------------- DELETE USER -------------------------------------//
 const deleteuserFormHandler = async (event) => {
   event.preventDefault();
   const id = document.querySelector('#deleteuser').value.trim();
@@ -146,7 +151,9 @@ const deleteuserFormHandler = async (event) => {
   console.log('User Deletion Exit')
 };
 
-//--------------------------LOCATION ADMIN CONTROLS-----------------------------
+//--------------------------LOCATION ADMIN CONTROLS-----------------------------//
+
+//--------------------------- ADD LOCATION -------------------------------------//
 const addlocationFormHandler = async (event) => {
   event.preventDefault();
 
@@ -177,6 +184,7 @@ const addlocationFormHandler = async (event) => {
   console.log('User Location Exit')
 };
 
+//--------------------------- DELETE LOCATION -------------------------------------//
 const deletelocationFormHandler = async (event) => {
   event.preventDefault();
   const id = document.querySelector('#deletelocation').value.trim();
@@ -198,6 +206,8 @@ const deletelocationFormHandler = async (event) => {
   }
   console.log('Locaiton Deletion Exit')
 }
+
+//------------------------ SUBMIT BUTTON QUERY SELECTORS ----------------------------------//
 document.querySelector('#addboardForm').addEventListener('submit', addboardFormHandler)
 document.querySelector('#deleteboardForm').addEventListener('submit', deleteboardFormHandler)
 document.querySelector('#modifyboardForm').addEventListener('submit', modifyboardFormHandler)
