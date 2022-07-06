@@ -66,34 +66,48 @@ const deleteboardFormHandler = async (event) => {
 //---------------------------MODIFY SURFBOARD-------------------------------------//
 const modifyboardFormHandler = async (event) => {
   event.preventDefault();
-  const id = document.querySelector('#modifyboardId').value.trim();
-  const board_num = document.querySelector('#modifyboardNumber').value.trim();
-  const brand = document.querySelector('#modifyboardBrand').value.trim();
-  const board_model = document.querySelector('#modifyboardModel').value.trim();
-  const length_inch = document.querySelector('#modifyboardLength').value.trim();
-  const fin_setup = document.querySelector('#modifyboardFinsetup').value.trim();
-  const fin_count = document.querySelector('#modifyboardFincount').value.trim();
-  const location_id = document.querySelector('#modifyboardLocation').value.trim();
-  var checked_out = document.getElementById('modifyboardCheckedout');
-  var damaged = document.getElementById('modifyboardDamaged');
 
-  if (id || board_num || brand || board_model || length_inch || fin_setup || fin_count || location_id || checked_out || damaged) {
-    if (checked_out.checked == true) { var checked_out = true } else { checked_out = false }
-    if (damaged.checked == true) { var damaged = true } else { damaged = false }
-    console.log(`/api/surfboards/update/${id}`)
-    const response = await fetch(`/api/surfboards/update/${id}`, {
-      method: 'PUT',
-      body: JSON.stringify({ board_num, brand, board_model, length_inch, fin_setup, fin_count, location_id, checked_out, damaged }),
-      headers: { 'Content-Type': 'application/json' },
-    });
+  let id = document.querySelector('#modifyboardId').value;
+  let board_num = document.querySelector('#modifyboardNumber').value.trim().length > 0 ? document.querySelector('#modifyboardNumber').value.trim() : null;
+  let brand = document.querySelector('#modifyboardBrand').value.trim().length > 0 ? document.querySelector('#modifyboardBrand').value.trim() : null;
+  let board_model = document.querySelector('#modifyboardModel').value.trim().length > 0 ? document.querySelector('#modifyboardModel').value.trim() : null;
+  let length_inch = document.querySelector('#modifyboardLength').value.trim().length > 0 ? document.querySelector('#modifyboardLength').value.trim() : null;
+  let fin_setup = document.querySelector('#modifyboardFinsetup').value.trim().length > 0 ? document.querySelector('#modifyboardFinsetup').value.trim() : null;
+  let fin_count = document.querySelector('#modifyboardFincount').value.trim().length > 0 ? document.querySelector('#modifyboardFincount').value.trim() : null;
+  let location_id = document.querySelector('#modifyboardLocation').value.trim().length > 0 ? document.querySelector('#modifyboardLocation').value.trim() : null;
+  let checked_out = document.getElementById('modifyboardCheckedout').checked;
+  let damaged = document.getElementById('modifyboardDamaged').checked;
 
-    window.alert("🏗️ Board Update Complete! 🏗️\n A Surfboard has been updated!\n ")
+  // if (board_num.length > 0 || brand.length > 0 || board_model || length_inch || fin_setup || fin_count || location_id || checked_out || damaged) {
 
-    if (1) {
-      document.location.replace('/admin');
-    } else {
-      alert('Failed to update surfboard.');
-    }
+  const bodyReq = {
+    checked_out: checked_out,
+    damaged: damaged,
+  }
+
+  if (board_num) { bodyReq.board_num = parseInt(board_num) }
+  if (brand) { bodyReq.brand = brand }
+  if (board_model) { bodyReq.board_model = board_model }
+  if (length_inch) { bodyReq.length_inch = parseInt(length_inch) }
+  if (fin_setup) { bodyReq.fin_setup = fin_setup }
+  if (fin_count) { bodyReq.fin_count = parseInt(fin_count) }
+  if (location_id) { bodyReq.location_id = parseInt(location_id) }
+
+  console.log(bodyReq)
+
+
+  const response = await fetch(`/api/surfboards/update/${id}`, {
+    method: 'PUT',
+    body: JSON.stringify(bodyReq),
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  window.alert("🏗️ Board Update Complete! 🏗️\n A Surfboard has been updated!\n ")
+
+  if (1) {
+    document.location.replace('/admin');
+  } else {
+    alert('Failed to update surfboard.');
   }
   console.log('Surfboard Update Exit')
 };
@@ -215,3 +229,5 @@ document.querySelector('#adduserForm').addEventListener('submit', adduserFormHan
 document.querySelector('#deleteuserForm').addEventListener('submit', deleteuserFormHandler)
 document.querySelector('#addlocationForm').addEventListener('submit', addlocationFormHandler)
 document.querySelector('#deletelocationForm').addEventListener('submit', deletelocationFormHandler)
+
+
