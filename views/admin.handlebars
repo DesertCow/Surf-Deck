@@ -1,76 +1,78 @@
-
-<div class="container collapse" id="surfboardtable" >
-  <table class="table table-striped table-hover table-primary table-font" >
-    <thead>
-      <tr>
-        <th scope="col">id #</th>
-        <th scope="col">Board #</th>
-        <th scope="col">Brand</th>
-        <th scope="col">Model</th>
-        <th scope="col">Length (in)</th>
-        <th scope="col">Checked Out</th>
-        <th scope="col">Damaged</th>
-        <th scope="col">Fin Setup</th>
-        <th scope="col">Fin #</th>
-        <th scope="col">Current Location</th>
-      </tr>
-    <tbody>
-      {{#each surfboards as |surfboard|}}
-      <tr>
-        <td>{{surfboard.id}}</td>
-        <td>{{surfboard.board_num}}</td>
-        <td>{{surfboard.brand}}</td>
-        <td>{{surfboard.board_model}}</td>
-        <td>{{surfboard.length_inch}}</td>
-        <td>{{surfboard.checked_out}}</td>
-        <td>{{surfboard.damaged}}</td>
-        <td>{{surfboard.fin_setup}}</td>
-        <td>{{surfboard.fin_count}}</td>
-        <td>{{surfboard.location_id}}</td>
-      </tr>
-      {{/each}}
-    </tbody>
-    </thead>
-  </table>
+<div class="adminTitle d-flex justify-content-center align-content-center p-2 m-4">
+  <h1>// &nbsp&nbsp&nbsp&nbsp&nbspAdmin Page&nbsp&nbsp&nbsp&nbsp \\</h1>
 </div>
-
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#surfboardtable"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: surfboard data table
-</button>
-
-<div class="container collapse" id="usertable">
-  <table class="table table-striped table-hover table-primary table-font">
-      <thead>
-        <tr>
-          <th scope="col">id #</th>
-          <th scope="col">name</th>
-          <th scope="col">email</th>
-          <th scope="col">password</th>
-         
-        </tr>
-      <tbody>
-        {{#each users as |user|}}
-        <tr>
-          <td>{{user.id}}</td>
-          <td>{{user.name}}</td>
-          <td>{{user.email}}</td>
-          <td>{{user.password}}</td>
-          
-        </tr>
-        {{/each}}
-      </tbody>
-      </thead>
-    </table>
-</div>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#usertable"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: user data table
-</button>
+<div class="container d-flex adminToolBox p-4">
+  <row class="row p-0 m-2">
+    <div class="container collapse" id="surfboardtable">
+      <table class="table table-striped table-hover table-primary table-font">
+        <thead>
+          <tr>
+            <th scope="col">id #</th>
+            <th scope="col">Board #</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Length (in)</th>
+            <th scope="col">Checked Out</th>
+            <th scope="col">Damaged</th>
+            <th scope="col">Fin Setup</th>
+            <th scope="col">Fin #</th>
+            <th scope="col">Current Location</th>
+          </tr>
+        <tbody>
+          {{#each surfboards as |surfboard|}}
+          <tr>
+            <td>{{surfboard.id}}</td>
+            <td>{{surfboard.board_num}}</td>
+            <td>{{surfboard.brand}}</td>
+            <td>{{surfboard.board_model}}</td>
+            <td>{{surfboard.length_inch}}</td>
+            <td>{{surfboard.checked_out}}</td>
+            <td>{{surfboard.damaged}}</td>
+            <td>{{surfboard.fin_setup}}</td>
+            <td>{{surfboard.fin_count}}</td>
+            <td>{{surfboard.location_id}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+        </thead>
+      </table>
+    </div>
     
-<div class="container collapse" id="locationtable">
- <table class="table table-striped table-hover table-primary table-font">
-     <thead>
+    <button class="btn adminBtn btn-secondary d-block mb-5" type="button" data-bs-toggle="collapse" data-bs-target="#surfboardtable"
+      aria-expanded="false" aria-controls="collapseExample">
+      Surfboard Database
+    </button>
+    
+    <div class="container collapse" id="usertable">
+      <table class="table table-striped table-hover table-primary table-font">
+        <thead>
+          <tr>
+            <th scope="col">id #</th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+            <th scope="col">password</th>
+          </tr>
+        <tbody>
+          {{#each users as |user|}}
+          <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+        </thead>
+      </table>
+    </div>
+    <button class="btn adminBtn btn-secondary d-block mb-5" type="button" data-bs-toggle="collapse" data-bs-target="#usertable"
+      aria-expanded="false" aria-controls="collapseExample">
+      User Database
+    </button>
+    
+    <div class="container collapse" id="locationtable">
+      <table class="table table-striped table-hover table-primary table-font">
+        <thead>
           <tr>
             <th scope="col">id #</th>
             <th scope="col">city</th>
@@ -95,209 +97,213 @@
         </tbody>
         </thead>
       </table>
-</div>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#locationtable"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: location data table
-</button>
+    </div>
+    <button class="btn adminBtn btn-secondary d-block mb-5" type="button" data-bs-toggle="collapse" data-bs-target="#locationtable"
+      aria-expanded="false" aria-controls="collapseExample">
+      Location Database
+    </button>
+  </row>
+    <row class="row m-4 p-1">
+        <form class="collapse p-3" id="addboardForm">
+          <div class="mb-3">
+            <label for="addboardNumber" class="form-label">Surfboard Number</label>
+            <input type="number" class="form-control" id="addboardNumber" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="addboardBrand" class="form-label">Surfboard Brand</label>
+            <input type="text" class="form-control" id="addboardBrand">
+          </div>
+          <div class="mb-3">
+            <label for="addboardModel" class="form-label">Surfboard Model</label>
+            <input type="text" class="form-control" id="addboardModel">
+          </div>
+          <div class="mb-3">
+            <label for="addboardLength" class="form-label">Surfboard Length (inches)</label>
+            <input type="number" class="form-control" id="addboardLength">
+          </div>
+          <div class="mb-3">
+            <label for="addboardFinsetup" class="form-label">Surfboard Fin Setup</label>
+            <input type="text" class="form-control" id="addboardFinsetup">
+          </div>
+          <div class="mb-3">
+            <label for="addboardFincount" class="form-label">Surfboard Fin Count</label>
+            <input type="number" class="form-control" id="addboardFincount">
+          </div>
+        
+          <div class="mb-3">
+            <label for="addboardLocation" class="form-label">Location ID</label>
+            <input type="number" class="form-control" id="addboardLocation">
+          </div>
+        
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="addboardCheckedout">
+            <label class="form-check-label" for="addboardCheckedout">Added Surfboard is Checked out</label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="addboardDamaged">
+            <label class="form-check-label" for="addboardDamaged">Added Surfboard is Damaged</label>
+          </div>
+          <button type="submit" class="btn btn-primary addboardBtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-success d-block my-3" type="button" data-bs-toggle="collapse" data-bs-target="#addboardForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Add Surfboard
+        </button>
+        <form class="collapse p-3" id="modifyboardForm">
+          <div class="mb-3">
+            <label for="modifyboardId" class="form-label">Surfboard ID</label>
+            <input type="number" class="form-control" id="modifyboardId">
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardNumber" class="form-label">Surfboard Number</label>
+            <input type="number" class="form-control" id="modifyboardNumber" aria-describedby="emailHelp">
+        
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardBrand" class="form-label">Surfboard Brand</label>
+            <input type="text" class="form-control" id="modifyboardBrand">
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardModel" class="form-label">Surfboard Model</label>
+            <input type="text" class="form-control" id="modifyboardModel">
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardLength" class="form-label">Surfboard Length (inches)</label>
+            <input type="number" class="form-control" id="modifyboardLength">
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardFinsetup" class="form-label">Surfboard Fin Setup</label>
+            <input type="text" class="form-control" id="modifyboardFinsetup">
+          </div>
+          <div class="mb-3">
+            <label for="modifyboardFincount" class="form-label">Surfboard Fin Count</label>
+            <input type="number" class="form-control" id="modifyboardFincount">
+          </div>
+        
+          <div class="mb-3">
+            <label for="modifyboardLocation" class="form-label">Location ID</label>
+            <input type="number" class="form-control" id="modifyboardLocation">
+          </div>
+        
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="modifyboardCheckedout">
+            <label class="form-check-label" for="modifyboardCheckedout">Added Surfboard is Checked out</label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="modifyboardDamaged">
+            <label class="form-check-label" for="modifyboardDamaged">Added Surfboard is Damaged</label>
+          </div>
+          <button type="submit" class="btn btn-primary modifyboardBtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-warning d-block my-3" type="button" data-bs-toggle="collapse" data-bs-target="#modifyboardForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Update Existing Surfboard
+        </button>
+      </row>
+      <div class="row m-2">
+        <form class="collapse p-3" id="deleteboardForm">
+          <div class="mb-3">
+            <label for="deleteboard" class="form-label">Enter the ID of the Board to be Deleted</label>
+            <input type="number" class="form-control" id="deleteboard" aria-describedby="emailHelp">
+        
+          </div>
+          <button type="submit" class="btn btn-primary deleteboardBtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-danger d-block my-3" type="button" data-bs-toggle="collapse" data-bs-target="#deleteboardForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Delete Surfboard
+        </button>
+        
 
-
-
-<form class="collapse" id="addboardForm">
-  <div class="mb-3">
-    <label for="addboardNumber" class="form-label">Surfboard Number</label>
-    <input type="number" class="form-control" id="addboardNumber" aria-describedby="emailHelp">
-
-  </div>
-  <div class="mb-3">
-    <label for="addboardBrand" class="form-label">Surfboard Brand</label>
-    <input type="text" class="form-control" id="addboardBrand">
-  </div>
-  <div class="mb-3">
-    <label for="addboardModel" class="form-label">Surfboard Model</label>
-    <input type="text" class="form-control" id="addboardModel">
-  </div>
-  <div class="mb-3">
-    <label for="addboardLength" class="form-label">Surfboard Length (inches)</label>
-    <input type="number" class="form-control" id="addboardLength">
-  </div>
-  <div class="mb-3">
-    <label for="addboardFinsetup" class="form-label">Surfboard Fin Setup</label>
-    <input type="text" class="form-control" id="addboardFinsetup">
-  </div>
-  <div class="mb-3">
-    <label for="addboardFincount" class="form-label">Surfboard Fin Count</label>
-    <input type="number" class="form-control" id="addboardFincount">
-  </div>
-
-  <div class="mb-3">
-    <label for="addboardLocation" class="form-label">Location ID</label>
-    <input type="number" class="form-control" id="addboardLocation">
+        
+        
+        <form class="collapse p-3" id="adduserForm">
+          <div class="mb-3">
+            <label for="adduserName" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="adduserName" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="adduserEmail" class="form-label">User Email</label>
+            <input type="text" class="form-control" id="adduserEmail" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="adduserPassword" class="form-label">User Password</label>
+            <input type="text" class="form-control" id="adduserPassword" aria-describedby="emailHelp">
+          </div>
+        
+          <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-primary d-block my-3 btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#adduserForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Add New User
+        </button>
+        
+        <form class="collapse p-3" id="deleteuserForm">
+          <div class="mb-3">
+            <label for="deleteuser" class="form-label">Enter the ID of the User to be Deleted</label>
+            <input type="number" class="form-control" id="deleteuser" aria-describedby="emailHelp">
+        
+          </div>
+          <button type="submit" class="btn btn-primary deleteuserBtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-primary d-block my-3 btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#deleteuserForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Delete User
+        </button>
+        
+        
+        
+        
+        <form class="collapse p-3" id="addlocationForm">
+          <div class="mt-3 mb-3">
+            <label for="addlocationCity" class="form-label">Location City</label>
+            <input type="text" class="form-control" id="addlocationCity" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="addlocationAddress" class="form-label">Location Address</label>
+            <input type="text" class="form-control" id="addlocationAddress" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="addlocationPhonenumber" class="form-label">Location Phone Number</label>
+            <input type="number" class="form-control" id="addlocationPhonenumber" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="addlocationHours" class="form-label">Location Hours</label>
+            <input type="text" class="form-control" id="addlocationHours" aria-describedby="emailHelp">
+          </div>
+        
+          <div class="mb-3">
+            <label for="addlocationImg" class="form-label">Location Img Filename</label>
+            <input type="text" class="form-control" id="addlocationImg" aria-describedby="emailHelp">
+          </div>
+        
+          <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-primary btn-success d-block my-3" type="button" data-bs-toggle="collapse" data-bs-target="#addlocationForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Add Location
+        </button>
+        
+        <form class="collapse p-3" id="deletelocationForm">
+          <div class="mb-3">
+            <label for="deletelocation" class="form-label">Enter the ID of the Location to be Deleted</label>
+            <input type="number" class="form-control" id="deletelocation" aria-describedby="emailHelp">
+        
+          </div>
+          <button type="submit" class="btn btn-primary deletelocationBtn">Submit</button>
+        </form>
+        <button class="btn adminBtn btn-primary my-3 btn-danger d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deletelocationForm"
+          aria-expanded="false" aria-controls="collapseExample">
+          Delete Location
+        </button>
+        </div>
+      </row>
+    
   </div>
   
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="addboardCheckedout">
-    <label class="form-check-label" for="addboardCheckedout">Added Surfboard is Checked out</label>
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="addboardDamaged">
-    <label class="form-check-label" for="addboardDamaged">Added Surfboard is Damaged</label>
-  </div>
-  <button type="submit" class="btn btn-primary addboardBtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#addboardForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Add Board Form
-</button>
-
-<form class="collapse" id="deleteboardForm">
-  <div class="mb-3">
-    <label for="deleteboard" class="form-label">Enter the ID of the Board to be Deleted</label>
-    <input type="number" class="form-control" id="deleteboard" aria-describedby="emailHelp">
-  
-  </div>
-  <button type="submit" class="btn btn-primary deleteboardBtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deleteboardForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Delete Board Form
-</button>
-
-<form class="collapse" id="modifyboardForm">
-  <div class="mb-3">
-    <label for="modifyboardId" class="form-label">Surfboard ID</label>
-    <input type="number" class="form-control" id="modifyboardId">
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardNumber" class="form-label">Surfboard Number</label>
-    <input type="number" class="form-control" id="modifyboardNumber" aria-describedby="emailHelp">
-
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardBrand" class="form-label">Surfboard Brand</label>
-    <input type="text" class="form-control" id="modifyboardBrand">
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardModel" class="form-label">Surfboard Model</label>
-    <input type="text" class="form-control" id="modifyboardModel">
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardLength" class="form-label">Surfboard Length (inches)</label>
-    <input type="number" class="form-control" id="modifyboardLength">
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardFinsetup" class="form-label">Surfboard Fin Setup</label>
-    <input type="text" class="form-control" id="modifyboardFinsetup">
-  </div>
-  <div class="mb-3">
-    <label for="modifyboardFincount" class="form-label">Surfboard Fin Count</label>
-    <input type="number" class="form-control" id="modifyboardFincount">
-  </div>
-
-  <div class="mb-3">
-    <label for="modifyboardLocation" class="form-label">Location ID</label>
-    <input type="number" class="form-control" id="modifyboardLocation">
-  </div>
-
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="modifyboardCheckedout">
-    <label class="form-check-label" for="modifyboardCheckedout">Added Surfboard is Checked out</label>
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="modifyboardDamaged">
-    <label class="form-check-label" for="modifyboardDamaged">Added Surfboard is Damaged</label>
-  </div>
-  <button type="submit" class="btn btn-primary modifyboardBtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#modifyboardForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Update Board Form
-</button>
-
-
-<form class="collapse" id="adduserForm">
-  <div class="mb-3">
-    <label for="adduserName" class="form-label">User Name</label>
-    <input type="text" class="form-control" id="adduserName" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="adduserEmail" class="form-label">User Email</label>
-    <input type="text" class="form-control" id="adduserEmail" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="adduserPassword" class="form-label">User Password</label>
-    <input type="text" class="form-control" id="adduserPassword" aria-describedby="emailHelp">
-  </div>
-
-  <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#adduserForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Add User Form
-</button>
-
-<form class="collapse" id="deleteuserForm">
-  <div class="mb-3">
-    <label for="deleteuser" class="form-label">Enter the ID of the User to be Deleted</label>
-    <input type="number" class="form-control" id="deleteuser" aria-describedby="emailHelp">
-
-  </div>
-  <button type="submit" class="btn btn-primary deleteuserBtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deleteuserForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Delete User Form
-</button>
-
-
-
-
-<form class="collapse" id="addlocationForm">
-  <div class="mb-3">
-    <label for="addlocationCity" class="form-label">Location City</label>
-    <input type="text" class="form-control" id="addlocationCity" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="addlocationAddress" class="form-label">Location Address</label>
-    <input type="text" class="form-control" id="addlocationAddress" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="addlocationPhonenumber" class="form-label">Location Phone Number</label>
-    <input type="number" class="form-control" id="addlocationPhonenumber" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="addlocationHours" class="form-label">Location Hours</label>
-    <input type="text" class="form-control" id="addlocationHours" aria-describedby="emailHelp">
-  </div>
-
-  <div class="mb-3">
-    <label for="addlocationImg" class="form-label">Location Img Filename</label>
-    <input type="text" class="form-control" id="addlocationImg" aria-describedby="emailHelp">
-  </div>
-
-  <button type="submit" class="btn btn-primary addUserbtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#addlocationForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Add Location Form
-</button>
-
-<form class="collapse" id="deletelocationForm">
-  <div class="mb-3">
-    <label for="deletelocation" class="form-label">Enter the ID of the Location to be Deleted</label>
-    <input type="number" class="form-control" id="deletelocation" aria-describedby="emailHelp">
-
-  </div>
-  <button type="submit" class="btn btn-primary deletelocationBtn">Submit</button>
-</form>
-<button class="btn btn-primary d-block" type="button" data-bs-toggle="collapse" data-bs-target="#deletelocationForm"
-  aria-expanded="false" aria-controls="collapseExample">
-  toggle display: Delete Location Form
-</button>
-
 <script src="./js/admin.js"></script>
