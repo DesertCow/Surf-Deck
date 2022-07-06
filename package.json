@@ -1,5 +1,5 @@
 {
-  "name": "develop",
+  "name": "Surf-Deck",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "nodemon": "^2.0.19",
     "sequelize": "^6.21.2"
   },
-  "description": "![badge](https://img.shields.io/badge/license-MIT-blue)",
+  "description": "An interactive and responsive application that allows a surfboard rental shop owner to manage and track an inventory of surfboards for daily rental or membership checkout. Each member will have a login to enable them to see what boards are available and reserve a surfboard. An administration page will be available to enable employees to manage the database.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DesertCow/Surf-Deck.git"

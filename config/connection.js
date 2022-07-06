@@ -7,7 +7,7 @@ require('dotenv').config();
 const { config } = require('dotenv');
 const Sequelize = require('sequelize');
 
-console.log("DB URL: " + process.env.CLEARDB_DATABASE_URL);
+console.log("\x1b[43mCLEARDB_DATABASE_URL: " + process.env.CLEARDB_DATABASE_URL + "\x1b[0m");
 
 const sequelize = process.env.CLEARDB_DATABASE_URL
   ? new Sequelize(process.env.CLEARDB_DATABASE_URL)
