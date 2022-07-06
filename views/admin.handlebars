@@ -17,6 +17,7 @@
             <th scope="col">Fin Setup</th>
             <th scope="col">Fin #</th>
             <th scope="col">Current Location</th>
+            <th scope="col">Image Filename</th>
           </tr>
         <tbody>
           {{#each surfboards as |surfboard|}}
@@ -31,6 +32,7 @@
             <td>{{surfboard.fin_setup}}</td>
             <td>{{surfboard.fin_count}}</td>
             <td>{{surfboard.location_id}}</td>
+            <td>{{surfboard.img}}</td>
           </tr>
           {{/each}}
         </tbody>
@@ -134,6 +136,11 @@
             <label for="addboardLocation" class="form-label">Location ID</label>
             <input type="number" class="form-control" id="addboardLocation">
           </div>
+
+          <div class="mb-3">
+            <label for="addboardImg" class="form-label">Surfboard Image Filename</label>
+            <input type="text" class="form-control" id="addboardImg">
+          </div>
         
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="addboardCheckedout">
@@ -183,6 +190,11 @@
           <div class="mb-3">
             <label for="modifyboardLocation" class="form-label">Location ID</label>
             <input type="number" class="form-control" id="modifyboardLocation">
+          </div>
+
+          <div class="mb-3">
+            <label for="modifyboardImg" class="form-label">Surfboard Image Filename</label>
+            <input type="text" class="form-control" id="modifyboardImg">
           </div>
         
           <div class="mb-3 form-check">
