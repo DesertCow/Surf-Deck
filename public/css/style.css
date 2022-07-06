@@ -1,11 +1,11 @@
 :root {
-  --mainBG: #4A86FC;
+  --mainBG: #99D5FF;
   --lightTextColor: #e3e4e3;
   --secondaryBG: azure;
-  --secondary: #FCBF49;
-  --tertiary: #4DC8C3;
+  --secondary: #997555;
+  --tertiary: azure;
 
-  --navLinks: #C14AFC;
+  --navLinks: azure;
 
   --primary: #3d5852;
   
@@ -88,6 +88,41 @@ body {
   background-color:var(--tertiary);
 }
 
+.rentBox {
+  background-color: var(--quatrinary);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 250px;
+}
+
+.rentBtn {
+  width: 950px;
+  height: 150px;
+}
+
+.boardRentalCard {
+  background-color: grey;
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  opacity: 94%;
+}
+
+.boardCardTitle {
+  font-size: 15px;
+}
+
+section h3 {
+
+}
+
 form {
   background-color: white;
 
@@ -145,7 +180,7 @@ form {
 }
  
 .login-form {
-  background-color: #4DC8C3;
+  background-color: var(--navLinks);
   width: 450px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -182,8 +217,8 @@ form {
 
 .welcome {
   font-size: 80px;
-  color: var(--lightTextColor);
-  font-family: monospace
+  color: black;
+  font-family: monospace;
 }
 
 .aboutTitle {
@@ -303,7 +338,7 @@ form {
 
 .rental-header {
   font-size: 50px;
-  color:white;
+  color:black;
   font-family: monospace;
 }
 

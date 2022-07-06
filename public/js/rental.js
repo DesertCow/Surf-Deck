@@ -1,5 +1,9 @@
 const boardRental = async (event) => {
+  event.stopPropagation();
+
+  console.log("Board Rented!" + JSON.stringify(event));
+
 
 }
 
-document.querySelector('#checkout').addEventListener('click',checkout)
+document.querySelector('.rentBtnEl').addEventListener('click', boardRental)

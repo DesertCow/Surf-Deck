@@ -1,24 +1,29 @@
-
-<div class="rentalsContainer p-2 m-2">
-  <h1 class="rental-header">Rentals Available</h1>
-
-  <div class="board-rental">
-
-    {{#each surfboards as |surfboard|}}
-    <section class="surfboard-data">
-      <img src="./img/{{surfboard.img}}" alt="">
-
-      <h2> {{surfboard.brand}} {{surfboard.board_model}} </h2>
-      <p> Board # : {{surfboard.board_num}} </p>
-      <p> Length: {{surfboard.length_inch}} </p>
-      <p> Located at : {{surfboard.location_id}} </p>
-
-      <button id="checkout"{{surfboard.board_num}}> Rent </button>
-
-    </section>
-    {{/each}}
+<div class="d-flex container col">
+  <div class="row d-flex container rentalsContainer p-1 m-5">
+    <div>
+      <h1 class="d-flex rental-header justify-content-center m-2">Rentals Available</h1>
+  
+      <div class="board-rental">
+  
+        {{#each surfboards as |surfboard|}}
+        <section class="surfboard-data rentBtnEl boardRentalCard p-2 pt-0">
+          <img src="/public/img/1001-surfboard.png" alt="">
+  
+          <h3 class="d-flex justify-content-center boardCardTitle align-content-center"> {{surfboard.brand}} </h3>
+          <h3 class="d-flex justify-content-center boardCardTitle align-content-center"> {{surfboard.board_model}} </h3>
+          <p> <br> Board # &nbsp&nbsp&nbsp: {{surfboard.board_num}} </p>
+          <p> Length &nbsp&nbsp&nbsp&nbsp: {{surfboard.length_inch}} </p>
+          <p> Fin Config : {{surfboard.fin_setup}} </p>
+          <p> Location&nbsp&nbsp&nbsp: {{surfboard.location_id}} </p>
+  
+        </section>
+        {{/each}}
+      </div>
+    </div>
   </div>
 </div>
-
+<div class="rentBox row d-flex justify-content-center">
+  <button class="rentBtn m-2 btn-lg btn-block"> Rent </button>
+</div>
 
 <script src="./js/rental.js"></script>
