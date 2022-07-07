@@ -22,8 +22,21 @@
     </div>
   </div>
 </div>
-<div class="rentBox row d-flex justify-content-center">
-  <button class="rentBtn m-2 btn-lg btn-block"> Rent </button>
+
+
+<form id="surfboardrentalForm">
+<div class="input-group mb-3">
+<button class="btn btn-outline-secondary" id="surfboardrentalSubmit" type="submit">Rent</button>
+<select class="form-select" id="surfboardrentalSelect" aria-label="Default select example">
+  <option selected>Select Board to Rent by Board Number</option>
+  {{#each surfboards as |surfboard|}}
+  <option value="{{surfboard.id}}">{{surfboard.board_num}}</option>
+  {{/each}}
+
+</select>
 </div>
+</form>
+
+
 
 <script src="./js/rental.js"></script>

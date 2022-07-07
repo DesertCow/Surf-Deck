@@ -6,7 +6,7 @@ const User = require('../models/user')
 //View all information from surfboard table
 router.get('/', (req, res) => {
   Surfboard.findAll()
-  
+
   // req.session.loggedIn = false;
   let loggedIn = req.session.loggedIn
   res.render('home', { loggedIn })
@@ -95,13 +95,16 @@ router.get('/rentals', async (req, res) => {
 
 
   try {
-    const surfboardDB = await Surfboard.findAll();
+    const surfboardDB = await Surfboard.findAll({
+      where: { checked_out: false }
+    })
+    // const surfboardDB = await Surfboard.findAll();
 
     const surfboards = surfboardDB.map((surfboard) =>
       surfboard.get({ plain: true })
     );
-
-    res.render('rental', { surfboards });
+    let loggedIn = req.session.loggedIn
+    res.render('rental', { surfboards, loggedIn });
 
   } catch (err) {
     console.log(err);
