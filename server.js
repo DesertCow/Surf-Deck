@@ -71,10 +71,10 @@ async function startLocalServer() {
 
 //==========================Handlebar Partials Functions ==============//
 
-app.post('/api/surfboards/', (req, res) => {
+// app.post('/api/surfboards/', (req, res) => {
 
 
-})
+// })
 
 
 

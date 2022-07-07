@@ -10,10 +10,11 @@ const { Surfboard, Location } = require('../../models')
 // View all information from surfboard table
 router.get('/', (req, res) => {
   Surfboard.findAll({
-    include: [
-      Location
+    include: {
+      model: Location, as: 'city'
 
-    ]
+
+    }
   })
 
     .then(surfboardData => res.json(surfboardData))
