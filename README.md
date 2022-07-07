@@ -97,7 +97,7 @@ npm start
     - Node.js (16.15.1)
     - Express.js (4.18.1)
     - Bootstrap (5.2.0-beta1)
-    - Handlebars (handlebars)
+    - Handlebars (4.7.7)
     - Bcrypt (5.0.1)
     - Sequelize (6.21.2)
     - jquery (3.6.0)
