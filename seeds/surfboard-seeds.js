@@ -23,8 +23,8 @@ const surfboardData = [
     length_inch: 72,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 1',
-    fin_count: 3,
+    fin_setup: 'Single',
+    fin_count: 1,
     location_id: 3,
     img: '1001-surfboard.png'
   },
@@ -35,7 +35,7 @@ const surfboardData = [
     length_inch: 116,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 2',
+    fin_setup: 'Twin',
     fin_count: 2,
     location_id: 3,
     img: '1001-surfboard.jpg'
@@ -47,8 +47,8 @@ const surfboardData = [
     length_inch: 72,
     checked_out: false,
     damaged: false,
-    fin_setup: 'setup 3',
-    fin_count: 1,
+    fin_setup: 'Thruster',
+    fin_count: 3,
     location_id: 2,
     img: '1002-surfboard.jpg'
   },
@@ -59,8 +59,8 @@ const surfboardData = [
     length_inch: 73,
     checked_out: false,
     damaged: true,
-    fin_setup: 'setup 2',
-    fin_count: 3,
+    fin_setup: 'Twin',
+    fin_count: 2,
     location_id: 1,
     img: '1003-surfboard.jpg'
   },
@@ -71,8 +71,8 @@ const surfboardData = [
     length_inch: 72,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 1',
-    fin_count: 2,
+    fin_setup: 'Single',
+    fin_count: 1,
     location_id: 1,
     img: '1004-surfboard.jpg'
   },
@@ -83,7 +83,7 @@ const surfboardData = [
     length_inch: 74,
     checked_out: false,
     damaged: true,
-    fin_setup: 'setup 3',
+    fin_setup: 'Thruster',
     fin_count: 3,
     location_id: 3,
     img: '1005-surfboard.jpg'
@@ -95,8 +95,8 @@ const surfboardData = [
     length_inch: 73,
     checked_out: false,
     damaged: false,
-    fin_setup: 'setup 2',
-    fin_count: 1,
+    fin_setup: 'Twin',
+    fin_count: 2,
     location_id: 2,
     img: '1006-surfboard.jpg'
   },
@@ -107,7 +107,7 @@ const surfboardData = [
     length_inch: 75,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 2',
+    fin_setup: 'Twin',
     fin_count: 2,
     location_id: 2,
     img: '1008-surfboard.jpg'
@@ -119,8 +119,8 @@ const surfboardData = [
     length_inch: 70,
     checked_out: false,
     damaged: true,
-    fin_setup: 'setup 3',
-    fin_count: 2,
+    fin_setup: 'Thruster',
+    fin_count: 3,
     location_id: 1,
     img: '1009-surfboard.jpg'
   },
@@ -131,7 +131,7 @@ const surfboardData = [
     length_inch: 69,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 1',
+    fin_setup: 'Thruster',
     fin_count: 3,
     location_id: 1,
     img: '1010-surfboard.jpg'
@@ -143,7 +143,7 @@ const surfboardData = [
     length_inch: 65,
     checked_out: false,
     damaged: false,
-    fin_setup: 'setup 2',
+    fin_setup: 'Twin',
     fin_count: 2,
     location_id: 2,
     img: '1011-surfboard.jpg'
@@ -155,7 +155,7 @@ const surfboardData = [
     length_inch: 90,
     checked_out: true,
     damaged: false,
-    fin_setup: 'setup 1',
+    fin_setup: 'Single',
     fin_count: 1,
     location_id: 3,
     img: '1012-surfboard.jpg'
