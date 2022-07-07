@@ -111,12 +111,22 @@ npm start
 <br>
 
     
-  ## [Demo](#table-of-contents)
+## [Demo](#table-of-contents)
   ----
 
  <p align="center">
   <img src="./public/img/demo1.gif" width="550" alt="Demo 1")
 </p>
 <h5 align="center">Demo of Surf-Deck</h5>
+<br>
+<br>
+
+## [Presentation](#table-of-contents)
+
+  ----
+
+ <p align="center">
+  <a href="./public/img/Surf-Deck_Presentation_22.pdf">Presentation PDF</a>
+</p>
 <br>
 <br>
